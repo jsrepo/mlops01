@@ -551,7 +551,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -1720,7 +1720,7 @@
         }
       },
       "n_jobs": 2,
-      "enabled": true
+      "enabled": false
     },
     "neural_network": {
       "layer_sizes": {
@@ -2107,7 +2107,7 @@
       "seed": 1337,
       "enable_early_stopping": true,
       "early_stopping_rounds": 4,
-      "enabled": false
+      "enabled": true
     },
     "deep_learning_sparkling": {
       "enabled": false,

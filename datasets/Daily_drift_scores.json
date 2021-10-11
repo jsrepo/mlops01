@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 19,
+    "versionNumber": 20,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633942386669
+    "lastModifiedOn": 1633942460614
   },
   "creationTag": {
     "versionNumber": 0,
@@ -254,13 +254,14 @@
     "runOnBuild": false,
     "checks": [
       {
+        "metricId": "col_stats:MAX:drift_model_accuracy",
         "minimum": 0.0,
         "maximum": 0.0,
-        "softMinimum": 0.0,
+        "softMinimum": 0.9,
         "softMaximum": 0.0,
         "minimumEnabled": false,
         "maximumEnabled": false,
-        "softMinimumEnabled": false,
+        "softMinimumEnabled": true,
         "softMaximumEnabled": false,
         "type": "numericRange",
         "meta": {

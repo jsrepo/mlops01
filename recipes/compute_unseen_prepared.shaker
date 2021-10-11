@@ -34,7 +34,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": true,
+      "disabled": false,
       "type": "FilterOnDate",
       "params": {
         "max": "2009-01-01T00:00:00.000",

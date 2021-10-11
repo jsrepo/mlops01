@@ -134,7 +134,7 @@
       }
     }
   },
-  "name": "TEST_SNOWFLAKE",
+  "name": "POC-Beta-Model Documentation",
   "projectStatus": "Sandbox",
   "imgPattern": 6,
   "metrics": {
@@ -192,11 +192,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 31,
+    "versionNumber": 35,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633953907661
+    "lastModifiedOn": 1633954944463
   },
   "creationTag": {
     "versionNumber": 0,
@@ -205,8 +205,11 @@
     },
     "lastModifiedOn": 1633919912506
   },
-  "shortDesc": "The project *TEST_SNOWFLAKE* was created by admin지성 on Jul 23rd 2021",
-  "tags": [],
+  "shortDesc": "PoC Presentation on Model documentations",
+  "tags": [
+    "base:POC",
+    "Country:Indonesia"
+  ],
   "customFields": {},
   "checklists": {
     "checklists": [

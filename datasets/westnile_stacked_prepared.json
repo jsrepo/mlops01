@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633924215443
+    "lastModifiedOn": 1633924634663
   },
   "creationTag": {
     "versionNumber": 0,
@@ -62,6 +62,18 @@
       {
         "name": "Date",
         "type": "string"
+      },
+      {
+        "name": "Date_parsed",
+        "type": "date"
+      },
+      {
+        "name": "year",
+        "type": "bigint"
+      },
+      {
+        "name": "Day_number",
+        "type": "bigint"
       },
       {
         "name": "Address",
@@ -106,6 +118,10 @@
       {
         "name": "WnvPresent",
         "type": "bigint"
+      },
+      {
+        "name": "position",
+        "type": "string"
       }
     ],
     "userModified": true

@@ -130,7 +130,7 @@
     "algorithm": "RANDOM_FOREST_CLASSIFICATION",
     "gridLength": 2
   },
-  "generatingModelId": "A-OCBETAMODELDOCUMENTATION-DBqBBcGE-oUk2uzrV-s3-pp1-m1",
+  "generatingModelId": "A-OCBETAMODELDOCUMENTATION-DBqBBcGE-oUk2uzrV-s4-pp1-m1",
   "preprocessing": {
     "reduce": {
       "kept_variance": 0.0,
@@ -882,7 +882,7 @@
         "nb_bins_hashing": 1048576,
         "min_samples": 10,
         "missing_impute_with": "MODE",
-        "role": "INPUT",
+        "role": "REJECT",
         "dummy_drop": "NONE",
         "dummy_clip": "MAX_NB_CATEGORIES",
         "cumulative_proportion": 0.95,
@@ -1155,6 +1155,7 @@
     "userModified": false
   },
   "script": {
+    "contextProjectKey": "OCBETAMODELDOCUMENTATION",
     "columnsSelection": {
       "mode": "ALL"
     },

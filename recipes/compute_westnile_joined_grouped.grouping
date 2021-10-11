@@ -5,23 +5,35 @@
   },
   "keys": [
     {
-      "column": "Date"
-    }
-  ],
-  "values": [
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "Date",
+      "count": false,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "stddev": false,
+      "first": false
+    },
     {
       "last": false,
       "max": false,
       "firstLastNotNull": false,
       "column": "Date_parsed",
       "count": false,
+      "$idx": 0,
       "sum": false,
       "concat": false,
+      "type": "date",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -31,13 +43,16 @@
       "firstLastNotNull": false,
       "column": "year",
       "count": false,
+      "$idx": 1,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -47,13 +62,16 @@
       "firstLastNotNull": false,
       "column": "Day_number",
       "count": false,
+      "$idx": 2,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -63,29 +81,16 @@
       "firstLastNotNull": false,
       "column": "Address",
       "count": false,
+      "$idx": 3,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "stddev": false,
-      "first": false
-    },
-    {
-      "last": false,
-      "max": false,
-      "firstLastNotNull": false,
-      "column": "Species",
-      "count": false,
-      "sum": false,
-      "concat": false,
-      "concatDistinct": false,
-      "sum2": false,
-      "min": false,
-      "countDistinct": false,
-      "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -95,13 +100,16 @@
       "firstLastNotNull": false,
       "column": "Block",
       "count": false,
+      "$idx": 5,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -111,13 +119,16 @@
       "firstLastNotNull": false,
       "column": "Street",
       "count": false,
+      "$idx": 6,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -127,13 +138,16 @@
       "firstLastNotNull": false,
       "column": "Trap",
       "count": false,
+      "$idx": 7,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -143,13 +157,16 @@
       "firstLastNotNull": false,
       "column": "AddressNumberAndStreet",
       "count": false,
+      "$idx": 8,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -159,13 +176,16 @@
       "firstLastNotNull": false,
       "column": "Latitude",
       "count": false,
+      "$idx": 9,
       "sum": false,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -175,13 +195,16 @@
       "firstLastNotNull": false,
       "column": "Longitude",
       "count": false,
+      "$idx": 10,
       "sum": false,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -191,45 +214,16 @@
       "firstLastNotNull": false,
       "column": "AddressAccuracy",
       "count": false,
+      "$idx": 11,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "stddev": false,
-      "first": false
-    },
-    {
-      "last": false,
-      "max": false,
-      "firstLastNotNull": false,
-      "column": "NumMosquitos",
-      "count": false,
-      "sum": false,
-      "concat": false,
-      "concatDistinct": false,
-      "sum2": false,
-      "min": false,
-      "countDistinct": false,
-      "avg": false,
-      "stddev": false,
-      "first": false
-    },
-    {
-      "last": false,
-      "max": false,
-      "firstLastNotNull": false,
-      "column": "WnvPresent",
-      "count": false,
-      "sum": false,
-      "concat": false,
-      "concatDistinct": false,
-      "sum2": false,
-      "min": false,
-      "countDistinct": false,
-      "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -239,13 +233,16 @@
       "firstLastNotNull": false,
       "column": "position",
       "count": false,
+      "$idx": 14,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -255,13 +252,16 @@
       "firstLastNotNull": false,
       "column": "Station",
       "count": false,
+      "$idx": 15,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -271,13 +271,16 @@
       "firstLastNotNull": false,
       "column": "Tmax",
       "count": false,
+      "$idx": 16,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -287,13 +290,16 @@
       "firstLastNotNull": false,
       "column": "Tmin",
       "count": false,
+      "$idx": 17,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -303,13 +309,16 @@
       "firstLastNotNull": false,
       "column": "Tavg",
       "count": false,
+      "$idx": 18,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -319,13 +328,16 @@
       "firstLastNotNull": false,
       "column": "Depart",
       "count": false,
+      "$idx": 19,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -335,13 +347,16 @@
       "firstLastNotNull": false,
       "column": "DewPoint",
       "count": false,
+      "$idx": 20,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -351,13 +366,16 @@
       "firstLastNotNull": false,
       "column": "WetBulb",
       "count": false,
+      "$idx": 21,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -367,13 +385,16 @@
       "firstLastNotNull": false,
       "column": "Heat",
       "count": false,
+      "$idx": 22,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -383,13 +404,16 @@
       "firstLastNotNull": false,
       "column": "Cool",
       "count": false,
+      "$idx": 23,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -399,13 +423,16 @@
       "firstLastNotNull": false,
       "column": "Sunrise",
       "count": false,
+      "$idx": 24,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -415,13 +442,16 @@
       "firstLastNotNull": false,
       "column": "Sunset",
       "count": false,
+      "$idx": 25,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -431,13 +461,16 @@
       "firstLastNotNull": false,
       "column": "CodeSum",
       "count": false,
+      "$idx": 26,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -447,13 +480,16 @@
       "firstLastNotNull": false,
       "column": "Depth",
       "count": false,
+      "$idx": 27,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -463,13 +499,16 @@
       "firstLastNotNull": false,
       "column": "Water1",
       "count": false,
+      "$idx": 28,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -479,13 +518,16 @@
       "firstLastNotNull": false,
       "column": "SnowFall",
       "count": false,
+      "$idx": 29,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -495,13 +537,16 @@
       "firstLastNotNull": false,
       "column": "PrecipTotal",
       "count": false,
+      "$idx": 30,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -511,13 +556,16 @@
       "firstLastNotNull": false,
       "column": "StnPressure",
       "count": false,
+      "$idx": 31,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -527,13 +575,16 @@
       "firstLastNotNull": false,
       "column": "SeaLevel",
       "count": false,
+      "$idx": 32,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -543,13 +594,16 @@
       "firstLastNotNull": false,
       "column": "ResultSpeed",
       "count": false,
+      "$idx": 33,
       "sum": false,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -559,13 +613,16 @@
       "firstLastNotNull": false,
       "column": "ResultDir",
       "count": false,
+      "$idx": 34,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -575,13 +632,75 @@
       "firstLastNotNull": false,
       "column": "AvgSpeed",
       "count": false,
+      "$idx": 35,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
+      "stddev": false,
+      "first": false
+    }
+  ],
+  "values": [
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "Species",
+      "count": false,
+      "$idx": 0,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "NumMosquitos",
+      "count": false,
+      "$idx": 1,
+      "sum": false,
+      "concat": false,
+      "type": "bigint",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "WnvPresent",
+      "count": false,
+      "$idx": 2,
+      "sum": false,
+      "concat": false,
+      "type": "bigint",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     }
@@ -622,8 +741,156 @@
     }
   },
   "enlargeYourBits": true,
+  "outputColumnNameOverrides": {},
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "Date",
+            "type": "string"
+          },
+          {
+            "name": "Date_parsed",
+            "type": "date"
+          },
+          {
+            "name": "year",
+            "type": "bigint"
+          },
+          {
+            "name": "Day_number",
+            "type": "bigint"
+          },
+          {
+            "name": "Address",
+            "type": "string"
+          },
+          {
+            "name": "Block",
+            "type": "bigint"
+          },
+          {
+            "name": "Street",
+            "type": "string"
+          },
+          {
+            "name": "Trap",
+            "type": "string"
+          },
+          {
+            "name": "AddressNumberAndStreet",
+            "type": "string"
+          },
+          {
+            "name": "Latitude",
+            "type": "double"
+          },
+          {
+            "name": "Longitude",
+            "type": "double"
+          },
+          {
+            "name": "AddressAccuracy",
+            "type": "bigint"
+          },
+          {
+            "name": "position",
+            "type": "string"
+          },
+          {
+            "name": "Station",
+            "type": "bigint"
+          },
+          {
+            "name": "Tmax",
+            "type": "bigint"
+          },
+          {
+            "name": "Tmin",
+            "type": "bigint"
+          },
+          {
+            "name": "Tavg",
+            "type": "string"
+          },
+          {
+            "name": "Depart",
+            "type": "string"
+          },
+          {
+            "name": "DewPoint",
+            "type": "bigint"
+          },
+          {
+            "name": "WetBulb",
+            "type": "string"
+          },
+          {
+            "name": "Heat",
+            "type": "string"
+          },
+          {
+            "name": "Cool",
+            "type": "string"
+          },
+          {
+            "name": "Sunrise",
+            "type": "string"
+          },
+          {
+            "name": "Sunset",
+            "type": "string"
+          },
+          {
+            "name": "CodeSum",
+            "type": "string"
+          },
+          {
+            "name": "Depth",
+            "type": "string"
+          },
+          {
+            "name": "Water1",
+            "type": "string"
+          },
+          {
+            "name": "SnowFall",
+            "type": "string"
+          },
+          {
+            "name": "PrecipTotal",
+            "type": "string"
+          },
+          {
+            "name": "StnPressure",
+            "type": "string"
+          },
+          {
+            "name": "SeaLevel",
+            "type": "string"
+          },
+          {
+            "name": "ResultSpeed",
+            "type": "double"
+          },
+          {
+            "name": "ResultDir",
+            "type": "bigint"
+          },
+          {
+            "name": "AvgSpeed",
+            "type": "string"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }

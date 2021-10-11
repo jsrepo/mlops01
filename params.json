@@ -178,11 +178,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 20,
+    "versionNumber": 22,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633920203210
+    "lastModifiedOn": 1633920229005
   },
   "creationTag": {
     "versionNumber": 0,
@@ -203,7 +203,22 @@
         "id": "e95e52",
         "title": "1.18 Deployement",
         "createdOn": 0,
-        "items": []
+        "items": [
+          {
+            "done": false,
+            "text": "a. Deploy Model to other environtment",
+            "createdOn": 1633920220776,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "b. Deploy model using API service",
+            "createdOn": 1633920228812,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          }
+        ]
       },
       {
         "id": "cfff5f",

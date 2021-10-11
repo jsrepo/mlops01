@@ -13,6 +13,14 @@
     {
       "objectId": "Model_output",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_Model_metrics_windows",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "Model_metrics_windows",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

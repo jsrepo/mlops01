@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633936036745
+    "lastModifiedOn": 1633936305111
   },
   "creationTag": {
     "versionNumber": 0,
@@ -96,24 +96,176 @@
         "comment": "Confidence interval upper bound for the accuracy of the domain classifier"
       },
       {
-        "name": "fugacity",
-        "type": "string",
-        "comment": "Proportion of samples predicted (in %) in each class when scoring on both the original test and the new input dataset."
+        "name": "fugacity_fugacity_class_0_original_dataset",
+        "type": "double"
       },
       {
-        "name": "fugacity_relative_change",
-        "type": "string",
-        "comment": "Relative change (in %) in each class with respect to the original fugacity value.\n\nFormula: 100*(new_fugacity - original_fugacity)/original_fugacity"
+        "name": "fugacity_fugacity_class_0_new_dataset",
+        "type": "double"
       },
       {
-        "name": "most_drifted_features",
-        "type": "string",
-        "comment": "When the drift score is medium/high (above 0.1), this is the list of features that have been drifted the most, with their % of importance (max 20 features)."
+        "name": "fugacity_relative_change_fugacity_relative_change_of_class_0",
+        "type": "double"
       },
       {
-        "name": "most_important_features_in_deployed_model",
-        "type": "string",
-        "comment": "When the drift score is medium/high (above 0.1), this is the list of features that have been drifted the most, with their % of importance (max 20 features)."
+        "name": "most_drifted_features_Day_number",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_dummy:weather_CodeSum:nan",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_daylight_time",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_ResultDir",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_ResultSpeed",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_PrecipTotal",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_dummy:weather_Sunrise:416",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_dummy:weather_Sunrise:417",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_StnPressure",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_Tmin",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_Depart",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_SeaLevel",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_WetBulb",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_Tmax",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_Sunset",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_Cool",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_year",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_DewPoint",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_Tavg",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_dummy:Date:2008-06-17",
+        "type": "double"
+      },
+      {
+        "name": "most_important_features_in_deployed_model_weather_Heat",
+        "type": "double"
+      },
+      {
+        "name": "most_important_features_in_deployed_model_daylight_time",
+        "type": "double"
+      },
+      {
+        "name": "most_important_features_in_deployed_model_weather_AvgSpeed",
+        "type": "double"
+      },
+      {
+        "name": "most_important_features_in_deployed_model_weather_Tmin",
+        "type": "double"
+      },
+      {
+        "name": "most_important_features_in_deployed_model_weather_PrecipTotal",
+        "type": "double"
+      },
+      {
+        "name": "most_important_features_in_deployed_model_weather_SnowFall",
+        "type": "double"
+      },
+      {
+        "name": "most_important_features_in_deployed_model_weather_StnPressure",
+        "type": "double"
+      },
+      {
+        "name": "most_important_features_in_deployed_model_weather_Depart",
+        "type": "double"
+      },
+      {
+        "name": "most_important_features_in_deployed_model_year",
+        "type": "double"
+      },
+      {
+        "name": "most_important_features_in_deployed_model_weather_ResultSpeed",
+        "type": "double"
+      },
+      {
+        "name": "most_important_features_in_deployed_model_Longitude",
+        "type": "double"
+      },
+      {
+        "name": "most_important_features_in_deployed_model_weather_WetBulb",
+        "type": "double"
+      },
+      {
+        "name": "most_important_features_in_deployed_model_weather_SeaLevel",
+        "type": "double"
+      },
+      {
+        "name": "most_important_features_in_deployed_model_weather_DewPoint",
+        "type": "double"
+      },
+      {
+        "name": "most_important_features_in_deployed_model_weather_Sunset",
+        "type": "double"
+      },
+      {
+        "name": "most_important_features_in_deployed_model_Latitude",
+        "type": "double"
+      },
+      {
+        "name": "most_important_features_in_deployed_model_weather_Tmax",
+        "type": "double"
+      },
+      {
+        "name": "most_important_features_in_deployed_model_weather_Tavg",
+        "type": "double"
+      },
+      {
+        "name": "most_important_features_in_deployed_model_Date_parsed",
+        "type": "double"
+      },
+      {
+        "name": "most_important_features_in_deployed_model_Block",
+        "type": "double"
       },
       {
         "name": "riskiest_features",

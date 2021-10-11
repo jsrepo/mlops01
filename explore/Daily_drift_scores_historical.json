@@ -136,7 +136,7 @@
         "showXAxis": false,
         "showInChartValues": false,
         "showInChartLabels": true,
-        "strokeWidth": 1,
+        "strokeWidth": 3,
         "fillOpacity": 0.6,
         "showXAxisLabel": true,
         "showYAxisLabel": true,
@@ -151,7 +151,7 @@
         "colorOptions": {
           "singleColor": "#2678B1",
           "transparency": 0.75,
-          "colorPalette": "default",
+          "colorPalette": "dku_pastel1",
           "ccScaleMode": "NORMAL",
           "customPalette": {
             "id": "__dku_custom__",
@@ -187,7 +187,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAKFJREFUaEPt0bENQjEUxdCkZgk2omIW2r8UPftQAxUREjs4bpwBrpV35tj4zrf7Za3x/Zxej+e4vscx18b8PzV3B+1eH7YF6H7C9IXt/YRtAbqfMH1hez9hW4DuJ0xf2N5P2Bag+wnTF7b3E7YF6H7C9IXt/YRtAbqfMH1hez9hW4DuJ0xf2N5P2Bag+wnTF7b3E7YF6H7C9IXt/YRtAbr/A2SsCylVDh6tAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAJdJREFUaEPt0TERgDAABEEiAVWooEQVJSpQhQU0pLi5FJc6+fn8jm3ifNdx7vf7TDxZ7upYrhFcqA/DA+vxCesEcIGE4YH1+IR1ArhAwvDAenzCOgFcIGF4YD0+YZ0ALpAwPLAen7BOABdIGB5Yj09YJ4ALJAwPrMcnrBPABRKGB9bjE9YJ4AIJwwPr8QnrBHCBhOGB9fgfEHMEKSi5tRMAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"

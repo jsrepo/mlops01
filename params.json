@@ -178,11 +178,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 18,
+    "versionNumber": 20,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633920182821
+    "lastModifiedOn": 1633920203210
   },
   "creationTag": {
     "versionNumber": 0,
@@ -192,7 +192,10 @@
     "lastModifiedOn": 1633919912506
   },
   "shortDesc": "The project *OC-BETA-Model Documentation* was created by admin.JS on Oct 11th 2021",
-  "tags": [],
+  "tags": [
+    "base:POC",
+    "Country:Indonesia"
+  ],
   "customFields": {},
   "checklists": {
     "checklists": [

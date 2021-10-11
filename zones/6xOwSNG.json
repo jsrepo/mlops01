@@ -1,6 +1,6 @@
 {
   "name": "Model Drift",
-  "color": "#C82423",
+  "color": "#31439C",
   "items": [
     {
       "objectId": "compute_Daily_drift_scores",

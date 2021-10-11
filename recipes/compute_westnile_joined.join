@@ -264,6 +264,7 @@
         "enabled": false
       },
       "autoSelectColumns": false,
+      "prefix": "weather",
       "index": 1,
       "computedColumns": []
     }
@@ -338,87 +339,87 @@
             "type": "string"
           },
           {
-            "name": "Station",
+            "name": "weather_Station",
             "type": "bigint"
           },
           {
-            "name": "Tmax",
+            "name": "weather_Tmax",
             "type": "bigint"
           },
           {
-            "name": "Tmin",
+            "name": "weather_Tmin",
             "type": "bigint"
           },
           {
-            "name": "Tavg",
+            "name": "weather_Tavg",
             "type": "string"
           },
           {
-            "name": "Depart",
+            "name": "weather_Depart",
             "type": "string"
           },
           {
-            "name": "DewPoint",
+            "name": "weather_DewPoint",
             "type": "bigint"
           },
           {
-            "name": "WetBulb",
+            "name": "weather_WetBulb",
             "type": "string"
           },
           {
-            "name": "Heat",
+            "name": "weather_Heat",
             "type": "string"
           },
           {
-            "name": "Cool",
+            "name": "weather_Cool",
             "type": "string"
           },
           {
-            "name": "Sunrise",
+            "name": "weather_Sunrise",
             "type": "string"
           },
           {
-            "name": "Sunset",
+            "name": "weather_Sunset",
             "type": "string"
           },
           {
-            "name": "CodeSum",
+            "name": "weather_CodeSum",
             "type": "string"
           },
           {
-            "name": "Depth",
+            "name": "weather_Depth",
             "type": "string"
           },
           {
-            "name": "Water1",
+            "name": "weather_Water1",
             "type": "string"
           },
           {
-            "name": "SnowFall",
+            "name": "weather_SnowFall",
             "type": "string"
           },
           {
-            "name": "PrecipTotal",
+            "name": "weather_PrecipTotal",
             "type": "string"
           },
           {
-            "name": "StnPressure",
+            "name": "weather_StnPressure",
             "type": "string"
           },
           {
-            "name": "SeaLevel",
+            "name": "weather_SeaLevel",
             "type": "string"
           },
           {
-            "name": "ResultSpeed",
+            "name": "weather_ResultSpeed",
             "type": "double"
           },
           {
-            "name": "ResultDir",
+            "name": "weather_ResultDir",
             "type": "bigint"
           },
           {
-            "name": "AvgSpeed",
+            "name": "weather_AvgSpeed",
             "type": "string"
           }
         ],

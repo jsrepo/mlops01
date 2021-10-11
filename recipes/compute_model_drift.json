@@ -47,18 +47,18 @@
       "items": [
         {
           "ref": "model_drift",
-          "appendMode": false
+          "appendMode": true
         }
       ]
     }
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633929363524
+    "lastModifiedOn": 1633929393573
   },
   "creationTag": {
     "versionNumber": 0,

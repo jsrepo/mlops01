@@ -5,11 +5,11 @@
   "name": "Model Drift Monitoring",
   "active": false,
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633952001926
+    "lastModifiedOn": 1633952113904
   },
   "checklists": {
     "checklists": []
@@ -112,7 +112,7 @@
               "partitionsSpec": ""
             }
           ],
-          "warningsAsErrors": false,
+          "warningsAsErrors": true,
           "proceedOnFailure": false
         }
       }

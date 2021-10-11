@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633954327511
+    "lastModifiedOn": 1633954383857
   },
   "creationTag": {
     "versionNumber": 0,
@@ -64,51 +64,19 @@
         "type": "date"
       },
       {
-        "name": "precision",
-        "type": "double"
-      },
-      {
-        "name": "recall",
-        "type": "double"
-      },
-      {
         "name": "auc",
         "type": "double"
       },
       {
-        "name": "f1",
+        "name": "f1_lag1",
         "type": "double"
       },
       {
-        "name": "accuracy",
+        "name": "f1_lag2",
         "type": "double"
       },
       {
-        "name": "mcc",
-        "type": "double"
-      },
-      {
-        "name": "hammingLoss",
-        "type": "double"
-      },
-      {
-        "name": "logLoss",
-        "type": "double"
-      },
-      {
-        "name": "lift",
-        "type": "double"
-      },
-      {
-        "name": "calibrationLoss",
-        "type": "double"
-      },
-      {
-        "name": "customScore",
-        "type": "double"
-      },
-      {
-        "name": "costMatrixGain",
+        "name": "f1_lag3",
         "type": "double"
       }
     ],

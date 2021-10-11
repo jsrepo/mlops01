@@ -91,7 +91,7 @@
       "column": "auc",
       "count": false,
       "$idx": 3,
-      "lagValues": "1,2,3",
+      "lagValues": "1",
       "sum": false,
       "concat": false,
       "type": "double",
@@ -101,9 +101,9 @@
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": true,
+      "lag": false,
       "leadValues": "1",
-      "$selected": true,
+      "$selected": false,
       "stddev": false,
       "value": true,
       "leadDiff": false,
@@ -382,27 +382,7 @@
             "type": "double"
           },
           {
-            "name": "auc_lag1",
-            "type": "double"
-          },
-          {
-            "name": "auc_lag2",
-            "type": "double"
-          },
-          {
-            "name": "auc_lag3",
-            "type": "double"
-          },
-          {
-            "name": "auc_lag_diff1",
-            "type": "double"
-          },
-          {
-            "name": "auc_lag_diff2",
-            "type": "double"
-          },
-          {
-            "name": "auc_lag_diff3",
+            "name": "auc_lag_diff",
             "type": "double"
           }
         ],

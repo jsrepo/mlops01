@@ -26,8 +26,63 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "floor(weather_Sunset/100) + weather_Sunset%100 /60 - \nfloor(weather_Sunrise/100) - weather_Sunrise%100/60\n",
+        "column": "daylight_time"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "M",
+            "to": "0"
+          },
+          {
+            "from": "T",
+            "to": "0.01"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [],
+        "appliesTo": "ALL",
+        "stopAfterFirstMatch": false,
+        "matching": "FULL_STRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "weather_Depth",
+          "weather_Water1"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -35,7 +90,47 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Address": 300,
+    "year": 100,
+    "AddressAccuracy": 128,
+    "Cool": 100,
+    "Latitude": 106,
+    "Day_number": 100,
+    "Depth": 100,
+    "NumMosquitos_sum": 135,
+    "AddressNumberAndStreet": 300,
+    "Water1": 100,
+    "Street": 162,
+    "Tmin": 100,
+    "Tavg": 100,
+    "Depart": 100,
+    "daylight_time": 113,
+    "AvgSpeed": 100,
+    "Date_parsed": 183,
+    "CodeSum": 100,
+    "count": 100,
+    "Trap": 100,
+    "DewPoint": 100,
+    "Longitude": 113,
+    "ResultDir": 100,
+    "Date": 100,
+    "SeaLevel": 100,
+    "StnPressure": 100,
+    "Species_concat": 300,
+    "Station": 100,
+    "Sunset": 100,
+    "ResultSpeed": 100,
+    "Heat": 100,
+    "WetBulb": 100,
+    "Tmax": 100,
+    "Block": 100,
+    "SnowFall": 100,
+    "Sunrise": 100,
+    "WnvPresent_max": 120,
+    "position": 204,
+    "PrecipTotal": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {

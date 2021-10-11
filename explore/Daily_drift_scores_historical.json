@@ -50,9 +50,9 @@
       "copySelectionFromScript": true,
       "engineType": "LINO",
       "def": {
-        "type": "lines",
+        "type": "multi_columns_lines",
         "variant": "normal",
-        "name": "Avg. of binomial_test_p_value by timestamp",
+        "name": "Avg. of drift_model_accuracy by timestamp",
         "userEditedName": false,
         "genericDimension0": [
           {
@@ -62,11 +62,11 @@
               "emptyBinsMode": "AVERAGE"
             },
             "dateParams": {
-              "mode": "AUTOMATIC"
+              "mode": "HOUR"
             },
             "maxValues": 0,
             "generateOthersCategory": true,
-            "oneTickPerBin": false,
+            "oneTickPerBin": true,
             "filters": [],
             "isA": "dimension",
             "possibleSorts": [
@@ -78,12 +78,12 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of binomial_test_p_value, descending"
+                "label": "Average of drift_model_accuracy, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of binomial_test_p_value, ascending",
+                "label": "Average of drift_model_accuracy, ascending",
                 "sortAscending": true
               }
             ],
@@ -99,13 +99,13 @@
         "animationDimension": [],
         "genericMeasures": [
           {
-            "column": "binomial_test_p_value",
+            "column": "drift_model_accuracy",
             "function": "AVG",
             "type": "NUMERICAL",
             "displayed": true,
             "isA": "measure",
             "displayAxis": "axis1",
-            "displayType": "column",
+            "displayType": "line",
             "computeMode": "NORMAL",
             "computeModeDim": 0
           }
@@ -169,6 +169,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -186,7 +187,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAGBJREFUaEPt1AERAEAIhEDtX/oDfANcGwjM7Ry7PfbveLhunGGGYwQkHRP6vcMwwzECko4JNVqSlnSMgKRjQq20pCUdIyDpmFArLWlJxwhIOibUSkta0jECko4JtdLnkn4pyQAp/G0vFAAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAKFJREFUaEPt0bENQjEUxdCkZgk2omIW2r8UPftQAxUREjs4bpwBrpV35tj4zrf7Za3x/Zxej+e4vscx18b8PzV3B+1eH7YF6H7C9IXt/YRtAbqfMH1hez9hW4DuJ0xf2N5P2Bag+wnTF7b3E7YF6H7C9IXt/YRtAbqfMH1hez9hW4DuJ0xf2N5P2Bag+wnTF7b3E7YF6H7C9IXt/YRtAbr/A2SsCylVDh6tAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"

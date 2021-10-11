@@ -47,18 +47,18 @@
       "items": [
         {
           "ref": "Daily_drift_scores",
-          "appendMode": false
+          "appendMode": true
         }
       ]
     }
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633929792802
+    "lastModifiedOn": 1633929820638
   },
   "creationTag": {
     "versionNumber": 0,

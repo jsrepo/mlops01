@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633921753147
+    "lastModifiedOn": 1633921753210
   },
   "creationTag": {
     "versionNumber": 0,
@@ -73,9 +73,19 @@
   },
   "tags": [],
   "params": {
-    "uploadBoxId": "1db28aa2e27c88e886a19b28935f5158cabfad26f113f7a3a7e4f6c87daaeb19",
-    "uploadConnection": "custom-upload",
     "uploadFSProviderType": "Filesystem",
+    "uploadedConfig": {
+      "connection": "custom-upload",
+      "path": "/uploads/${projectKey}/westnile_data_after_2010",
+      "notReadyIfEmpty": false,
+      "filesSelectionRules": {
+        "mode": "ALL",
+        "excludeRules": [],
+        "includeRules": [],
+        "explicitFiles": []
+      }
+    },
+    "connection": "custom-upload",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",

@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 24,
+    "versionNumber": 25,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633942539017
+    "lastModifiedOn": 1633942764994
   },
   "creationTag": {
     "versionNumber": 0,
@@ -121,7 +121,7 @@
         "comment": "If the drift score is medium/high (above 0.1), we recommend you to check those features.\nA feature is considered risky if it is both in the top 40% of the most drifted features as well as the top 40% most important features in the original model."
       }
     ],
-    "userModified": false
+    "userModified": true
   },
   "dkuProperties": [],
   "metrics": {
@@ -256,11 +256,11 @@
     "checks": [
       {
         "metricId": "col_stats:MAX:drift_model_accuracy",
-        "minimum": 0.0,
+        "minimum": 0.9,
         "maximum": 0.0,
-        "softMinimum": 0.9,
+        "softMinimum": 0.99,
         "softMaximum": 0.0,
-        "minimumEnabled": false,
+        "minimumEnabled": true,
         "maximumEnabled": false,
         "softMinimumEnabled": true,
         "softMaximumEnabled": false,

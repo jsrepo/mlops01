@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633929804669
+    "lastModifiedOn": 1633936590334
   },
   "creationTag": {
     "versionNumber": 0,
@@ -77,48 +77,39 @@
       },
       {
         "name": "drift_model_accuracy",
-        "type": "double",
-        "comment": "In order to detect data drift, we train a random forest classifier (the drift model) to discriminate the new data set from the test set. If this classifier has accuracy \u003e 0.5, it implies that test data and new data can be distinguished and that you are observing data drift. You may consider retraining your model in that situation."
+        "type": "double"
       },
       {
         "name": "binomial_test_p_value",
-        "type": "double",
-        "comment": "The hypothesis tested is that there is no drift, in which case the expected drift model accuracy is 0.5 (datasets undistinguishable). The observed accuracy might deviate from this expectation and the Binomial test evaluates whether this deviation is statistically significant, modelling the number of correct predictions as a random variable drawn from a Binomial distribution. The p-value is the probability to observe this particular accuracy (or larger) under the hypothesis of absent drift. If this probability is lower than the significance level (i.e. 5%), it’s then unlikely to be in the situation of absent drift: the hypothesis of no drift is rejected, triggering a drift detection. The significance level indicates the rate of falsely-detected drifts we are ready to accept from the test."
+        "type": "double"
       },
       {
         "name": "accuracy_lower_bound",
-        "type": "double",
-        "comment": "Confidence interval lower bound for the accuracy of the domain classifier"
+        "type": "double"
       },
       {
         "name": "accuracy_upper_bound",
-        "type": "double",
-        "comment": "Confidence interval upper bound for the accuracy of the domain classifier"
+        "type": "double"
       },
       {
         "name": "fugacity",
-        "type": "string",
-        "comment": "Proportion of samples predicted (in %) in each class when scoring on both the original test and the new input dataset."
+        "type": "string"
       },
       {
         "name": "fugacity_relative_change",
-        "type": "string",
-        "comment": "Relative change (in %) in each class with respect to the original fugacity value.\n\nFormula: 100*(new_fugacity - original_fugacity)/original_fugacity"
+        "type": "string"
       },
       {
         "name": "most_drifted_features",
-        "type": "string",
-        "comment": "When the drift score is medium/high (above 0.1), this is the list of features that have been drifted the most, with their % of importance (max 20 features)."
+        "type": "string"
       },
       {
         "name": "most_important_features_in_deployed_model",
-        "type": "string",
-        "comment": "When the drift score is medium/high (above 0.1), this is the list of features that have been drifted the most, with their % of importance (max 20 features)."
+        "type": "string"
       },
       {
         "name": "riskiest_features",
-        "type": "string",
-        "comment": "If the drift score is medium/high (above 0.1), we recommend you to check those features.\nA feature is considered risky if it is both in the top 40% of the most drifted features as well as the top 40% most important features in the original model."
+        "type": "string"
       }
     ],
     "userModified": false

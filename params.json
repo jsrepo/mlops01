@@ -120,7 +120,7 @@
       }
     }
   },
-  "name": "OC-BETA-Model Documentation",
+  "name": "POC-BETA-Model Documentation",
   "projectStatus": "Sandbox",
   "imgPattern": 4,
   "metrics": {
@@ -178,11 +178,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 18,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633920022188
+    "lastModifiedOn": 1633920182821
   },
   "creationTag": {
     "versionNumber": 0,
@@ -207,6 +207,69 @@
         "title": "1.19 User activity",
         "createdOn": 0,
         "items": []
+      },
+      {
+        "id": "562673",
+        "title": "1.20 Demonstrate model metadata storing and automatic model document generator with  capabilities:",
+        "createdOn": 0,
+        "items": [
+          {
+            "done": false,
+            "text": "a. Model Owner (can be linked to active directory)",
+            "createdOn": 1633920088401,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "b. Model ID",
+            "createdOn": 1633920096625,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "c. Model Version",
+            "createdOn": 1633920104245,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "d. Status (e.g. active, experiment, deprecated)",
+            "createdOn": 1633920112269,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "e. Alerts for drift, outlier etc",
+            "createdOn": 1633920120082,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "g. Model documentation",
+            "createdOn": 1633920126913,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "h. Model document output in HTML format",
+            "createdOn": 1633920132951,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "i. Model document output in Word format",
+            "createdOn": 1633920138467,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          }
+        ]
       }
     ]
   }

@@ -364,7 +364,7 @@
       "windowLowerBound": 0,
       "enableLimits": true,
       "partitioningColumns": [
-        "date"
+        "auc"
       ]
     }
   ],

@@ -85,13 +85,13 @@
     },
     {
       "last": false,
-      "lagDiff": false,
+      "lagDiff": true,
       "max": false,
       "firstLastNotNull": false,
       "column": "auc",
       "count": false,
       "$idx": 3,
-      "lagValues": "1",
+      "lagValues": "1,2,3",
       "sum": false,
       "concat": false,
       "type": "double",
@@ -101,9 +101,9 @@
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
-      "$selected": false,
+      "$selected": true,
       "stddev": false,
       "value": true,
       "leadDiff": false,
@@ -127,9 +127,9 @@
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": true,
+      "lag": false,
       "leadValues": "1",
-      "$selected": true,
+      "$selected": false,
       "stddev": false,
       "value": false,
       "leadDiff": false,
@@ -362,7 +362,7 @@
       "limitPreceding": false,
       "followingRows": 0,
       "windowLowerBound": 0,
-      "enableLimits": false,
+      "enableLimits": true,
       "partitioningColumns": [
         "date"
       ]
@@ -382,15 +382,27 @@
             "type": "double"
           },
           {
-            "name": "f1_lag1",
+            "name": "auc_lag1",
             "type": "double"
           },
           {
-            "name": "f1_lag2",
+            "name": "auc_lag2",
             "type": "double"
           },
           {
-            "name": "f1_lag3",
+            "name": "auc_lag3",
+            "type": "double"
+          },
+          {
+            "name": "auc_lag_diff1",
+            "type": "double"
+          },
+          {
+            "name": "auc_lag_diff2",
+            "type": "double"
+          },
+          {
+            "name": "auc_lag_diff3",
             "type": "double"
           }
         ],

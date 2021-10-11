@@ -1,0 +1,217 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": []
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "Date",
+      "table": 0
+    },
+    {
+      "name": "Date_parsed",
+      "table": 0
+    },
+    {
+      "name": "year",
+      "table": 0
+    },
+    {
+      "name": "Day_number",
+      "table": 0
+    },
+    {
+      "name": "Address",
+      "table": 0
+    },
+    {
+      "name": "Species",
+      "table": 0
+    },
+    {
+      "name": "Block",
+      "table": 0
+    },
+    {
+      "name": "Street",
+      "table": 0
+    },
+    {
+      "name": "Trap",
+      "table": 0
+    },
+    {
+      "name": "AddressNumberAndStreet",
+      "table": 0
+    },
+    {
+      "name": "Latitude",
+      "table": 0
+    },
+    {
+      "name": "Longitude",
+      "table": 0
+    },
+    {
+      "name": "AddressAccuracy",
+      "table": 0
+    },
+    {
+      "name": "NumMosquitos",
+      "table": 0
+    },
+    {
+      "name": "WnvPresent",
+      "table": 0
+    },
+    {
+      "name": "position",
+      "table": 0
+    },
+    {
+      "name": "Station",
+      "table": 1
+    },
+    {
+      "name": "Tmax",
+      "table": 1
+    },
+    {
+      "name": "Tmin",
+      "table": 1
+    },
+    {
+      "name": "Tavg",
+      "table": 1
+    },
+    {
+      "name": "Depart",
+      "table": 1
+    },
+    {
+      "name": "DewPoint",
+      "table": 1
+    },
+    {
+      "name": "WetBulb",
+      "table": 1
+    },
+    {
+      "name": "Heat",
+      "table": 1
+    },
+    {
+      "name": "Cool",
+      "table": 1
+    },
+    {
+      "name": "Sunrise",
+      "table": 1
+    },
+    {
+      "name": "Sunset",
+      "table": 1
+    },
+    {
+      "name": "CodeSum",
+      "table": 1
+    },
+    {
+      "name": "Depth",
+      "table": 1
+    },
+    {
+      "name": "Water1",
+      "table": 1
+    },
+    {
+      "name": "SnowFall",
+      "table": 1
+    },
+    {
+      "name": "PrecipTotal",
+      "table": 1
+    },
+    {
+      "name": "StnPressure",
+      "table": 1
+    },
+    {
+      "name": "SeaLevel",
+      "table": 1
+    },
+    {
+      "name": "ResultSpeed",
+      "table": 1
+    },
+    {
+      "name": "ResultDir",
+      "table": 1
+    },
+    {
+      "name": "AvgSpeed",
+      "table": 1
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "enableAutoCastInJoinConditions": false
+}

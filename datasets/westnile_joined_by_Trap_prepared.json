@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633925218961
+    "lastModifiedOn": 1633925240308
   },
   "creationTag": {
     "versionNumber": 0,
@@ -210,6 +210,10 @@
       {
         "name": "count",
         "type": "bigint"
+      },
+      {
+        "name": "daylight_time",
+        "type": "string"
       }
     ],
     "userModified": true

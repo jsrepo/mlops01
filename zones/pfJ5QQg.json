@@ -1,7 +1,16 @@
 {
   "name": "Model Score",
   "color": "#C82423",
-  "items": [],
+  "items": [
+    {
+      "objectId": "score_unseen_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "unseen_prepared_scored",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},

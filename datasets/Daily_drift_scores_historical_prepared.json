@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633951378413
+    "lastModifiedOn": 1633951411921
   },
   "creationTag": {
     "versionNumber": 0,
@@ -109,6 +109,154 @@
         "name": "most_drifted_features",
         "type": "string",
         "comment": "When the drift score is medium/high (above 0.1), this is the list of features that have been drifted the most, with their % of importance (max 20 features)."
+      },
+      {
+        "name": "most_drifted_features_Day_number",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_Heat",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_ResultDir",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_Sunset",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_dummy:Street:W SUNNYSIDE AVE",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_dummy:Street:N MANDELL AVE",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_dummy:Trap:T004",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_dummy:position:POINT(-87.757639 41.964242)",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_AvgSpeed",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_PrecipTotal",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_AddressAccuracy",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_StnPressure",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_Depart",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_year",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_ResultSpeed",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_daylight_time",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_Cool",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_Longitude",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_dummy:Street:W ROSCOE ST",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_dummy:position:POINT(-87.776385 41.942114)",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_dummy:Street:N MELVINA AVE",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_dummy:Trap:T002A",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_WetBulb",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_Tmax",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_SeaLevel",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_Tmin",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_dummy:Trap:T007",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_dummy:position:POINT(-87.789234 41.951878)",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_dummy:Street:N TRIPP AVE",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_dummy:Street:W DAKIN ST",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_Latitude",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_dummy:position:POINT(-87.781978 41.965571)",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_dummy:Street:N AVONDALE AVE",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_DewPoint",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_weather_Tavg",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_Block",
+        "type": "double"
+      },
+      {
+        "name": "most_drifted_features_dummy:position:POINT(-87.733974 41.953705)",
+        "type": "double"
       },
       {
         "name": "most_important_features_in_deployed_model",

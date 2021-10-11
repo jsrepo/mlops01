@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633921721520
+    "lastModifiedOn": 1633921721588
   },
   "creationTag": {
     "versionNumber": 0,
@@ -73,9 +73,19 @@
   },
   "tags": [],
   "params": {
-    "uploadBoxId": "2779dd70594471c38ae7ad48e6d40f78035bd1158341cfaeec2de7a305a8653b",
-    "uploadConnection": "custom-upload",
     "uploadFSProviderType": "Filesystem",
+    "uploadedConfig": {
+      "connection": "custom-upload",
+      "path": "/uploads/${projectKey}/weather",
+      "notReadyIfEmpty": false,
+      "filesSelectionRules": {
+        "mode": "ALL",
+        "excludeRules": [],
+        "includeRules": [],
+        "explicitFiles": []
+      }
+    },
+    "connection": "custom-upload",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",

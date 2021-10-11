@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633925240308
+    "lastModifiedOn": 1633926278371
   },
   "creationTag": {
     "versionNumber": 0,
@@ -112,87 +112,83 @@
         "type": "string"
       },
       {
-        "name": "Station",
+        "name": "weather_Station",
         "type": "bigint"
       },
       {
-        "name": "Tmax",
+        "name": "weather_Tmax",
         "type": "bigint"
       },
       {
-        "name": "Tmin",
+        "name": "weather_Tmin",
         "type": "bigint"
       },
       {
-        "name": "Tavg",
+        "name": "weather_Tavg",
         "type": "bigint"
       },
       {
-        "name": "Depart",
+        "name": "weather_Depart",
         "type": "bigint"
       },
       {
-        "name": "DewPoint",
+        "name": "weather_DewPoint",
         "type": "bigint"
       },
       {
-        "name": "WetBulb",
+        "name": "weather_WetBulb",
+        "type": "bigint"
+      },
+      {
+        "name": "weather_Heat",
+        "type": "bigint"
+      },
+      {
+        "name": "weather_Cool",
+        "type": "bigint"
+      },
+      {
+        "name": "weather_Sunrise",
         "type": "string"
       },
       {
-        "name": "Heat",
+        "name": "weather_Sunset",
         "type": "bigint"
       },
       {
-        "name": "Cool",
-        "type": "bigint"
-      },
-      {
-        "name": "Sunrise",
+        "name": "daylight_time",
         "type": "string"
       },
       {
-        "name": "Sunset",
-        "type": "bigint"
-      },
-      {
-        "name": "CodeSum",
+        "name": "weather_CodeSum",
         "type": "string"
       },
       {
-        "name": "Depth",
-        "type": "bigint"
-      },
-      {
-        "name": "Water1",
-        "type": "string"
-      },
-      {
-        "name": "SnowFall",
-        "type": "string"
-      },
-      {
-        "name": "PrecipTotal",
-        "type": "string"
-      },
-      {
-        "name": "StnPressure",
-        "type": "string"
-      },
-      {
-        "name": "SeaLevel",
+        "name": "weather_SnowFall",
         "type": "double"
       },
       {
-        "name": "ResultSpeed",
+        "name": "weather_PrecipTotal",
         "type": "double"
       },
       {
-        "name": "ResultDir",
+        "name": "weather_StnPressure",
+        "type": "double"
+      },
+      {
+        "name": "weather_SeaLevel",
+        "type": "double"
+      },
+      {
+        "name": "weather_ResultSpeed",
+        "type": "double"
+      },
+      {
+        "name": "weather_ResultDir",
         "type": "bigint"
       },
       {
-        "name": "AvgSpeed",
+        "name": "weather_AvgSpeed",
         "type": "double"
       },
       {
@@ -210,10 +206,6 @@
       {
         "name": "count",
         "type": "bigint"
-      },
-      {
-        "name": "daylight_time",
-        "type": "string"
       }
     ],
     "userModified": true

@@ -34,7 +34,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "FilterOnDate",
       "params": {
         "max": "2009-01-01T00:00:00.000",
@@ -46,6 +46,30 @@
         "relativeMin": 1,
         "appliesTo": "SINGLE_COLUMN",
         "min": "2008-07-02T00:00:00.000",
+        "booleanMode": "AND",
+        "relativeMax": 1,
+        "timezone_id": "UTC",
+        "action": "KEEP_ROW",
+        "filterType": "RANGE",
+        "option": "THIS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnDate",
+      "params": {
+        "max": "2009-02-07T00:00:00.000",
+        "columns": [
+          "Date_parsed"
+        ],
+        "part": "YEAR",
+        "values": [],
+        "relativeMin": 1,
+        "appliesTo": "SINGLE_COLUMN",
+        "min": "2009-02-01T00:00:00.000",
         "booleanMode": "AND",
         "relativeMax": 1,
         "timezone_id": "UTC",

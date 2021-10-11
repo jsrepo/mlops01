@@ -68,6 +68,61 @@
     }
   ],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "Date",
+            "type": "string"
+          },
+          {
+            "name": "Address",
+            "type": "string"
+          },
+          {
+            "name": "Species",
+            "type": "string"
+          },
+          {
+            "name": "Block",
+            "type": "bigint"
+          },
+          {
+            "name": "Street",
+            "type": "string"
+          },
+          {
+            "name": "Trap",
+            "type": "string"
+          },
+          {
+            "name": "AddressNumberAndStreet",
+            "type": "string"
+          },
+          {
+            "name": "Latitude",
+            "type": "double"
+          },
+          {
+            "name": "Longitude",
+            "type": "double"
+          },
+          {
+            "name": "AddressAccuracy",
+            "type": "bigint"
+          },
+          {
+            "name": "NumMosquitos",
+            "type": "bigint"
+          },
+          {
+            "name": "WnvPresent",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },

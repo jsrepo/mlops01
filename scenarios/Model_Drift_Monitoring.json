@@ -5,11 +5,11 @@
   "name": "Model Drift Monitoring",
   "active": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633951793113
+    "lastModifiedOn": 1633951927608
   },
   "checklists": {
     "checklists": []
@@ -21,9 +21,77 @@
   },
   "tags": [],
   "triggers": [],
-  "reporters": [],
+  "reporters": [
+    {
+      "active": true,
+      "messaging": {
+        "type": "mail-scenario",
+        "configuration": {
+          "subject": "DSS scenario ${scenarioName}: ${outcome}",
+          "sender": "help@demoapac.ai",
+          "recipient": "jiseong.kim@dataiku.com",
+          "sendAsHTML": false,
+          "attachments": [
+            {
+              "type": "DASHBOARD_EXPORT",
+              "params": {
+                "exportFormat": {
+                  "paperSize": "A4",
+                  "orientation": "LANDSCAPE",
+                  "fileType": "PDF",
+                  "width": 1920,
+                  "height": 1358
+                },
+                "dashboardId": "D1wS8j5"
+              }
+            }
+          ],
+          "messageSource": "TEMPLATE_FILE",
+          "templateFormat": "FREEMARKER",
+          "templateName": "default.ftl"
+        }
+      },
+      "id": "lMvfaAOf",
+      "name": "Model Drift - Nile Virus",
+      "runConditionEnabled": true,
+      "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
+      "phase": "END"
+    }
+  ],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "build_0_true_d_Daily_drift_scores_d_Daily_drift_scores_historical",
+        "type": "build_flowitem",
+        "name": "Drift Scores",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "Daily_drift_scores",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "Daily_drift_scores_historical",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}

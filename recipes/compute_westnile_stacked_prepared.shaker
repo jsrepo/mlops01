@@ -26,8 +26,72 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "Date_parsed",
+        "formats": [
+          "yyyy-MM-dd"
+        ],
+        "columns": [
+          "Date"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateComponentsExtractor",
+      "params": {
+        "outMonthColumn": "",
+        "outYearColumn": "year",
+        "column": "Date_parsed",
+        "timezone_id": "UTC",
+        "outDayColumn": ""
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateDifference",
+      "params": {
+        "output": "Day_number",
+        "input2": "Date_parsed",
+        "outputUnit": "DAYS",
+        "input1": "year",
+        "compareTo": "COLUMN",
+        "reverse": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "GeoPointCreator",
+      "params": {
+        "out_column": "position",
+        "lat_column": "Latitude",
+        "lon_column": "Longitude"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -35,7 +99,24 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Address": 300,
+    "Date_parsed": 183,
+    "year": 100,
+    "AddressAccuracy": 128,
+    "Trap": 100,
+    "Latitude": 106,
+    "Day_number": 100,
+    "Longitude": 113,
+    "Date": 100,
+    "AddressNumberAndStreet": 300,
+    "Block": 100,
+    "Street": 162,
+    "NumMosquitos": 105,
+    "WnvPresent": 100,
+    "position": 204,
+    "Species": 169
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {

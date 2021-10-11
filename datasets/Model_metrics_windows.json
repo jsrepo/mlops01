@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633954428794
+    "lastModifiedOn": 1633954517441
   },
   "creationTag": {
     "versionNumber": 0,
@@ -68,27 +68,7 @@
         "type": "double"
       },
       {
-        "name": "auc_lag1",
-        "type": "double"
-      },
-      {
-        "name": "auc_lag2",
-        "type": "double"
-      },
-      {
-        "name": "auc_lag3",
-        "type": "double"
-      },
-      {
-        "name": "auc_lag_diff1",
-        "type": "double"
-      },
-      {
-        "name": "auc_lag_diff2",
-        "type": "double"
-      },
-      {
-        "name": "auc_lag_diff3",
+        "name": "auc_lag_diff",
         "type": "double"
       }
     ],

@@ -5,11 +5,11 @@
   "name": "Model Drift Monitoring",
   "active": false,
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633952113904
+    "lastModifiedOn": 1633952157973
   },
   "checklists": {
     "checklists": []
@@ -27,6 +27,7 @@
       "messaging": {
         "type": "mail-scenario",
         "configuration": {
+          "channelId": "AWS SES",
           "subject": "DSS scenario ${scenarioName}: ${outcome}",
           "sender": "help@demoapac.ai",
           "recipient": "jiseong.kim@dataiku.com",

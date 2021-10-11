@@ -5,12 +5,15 @@
     "pipelineAllowStart": true
   },
   "backendType": "PY_MEMORY",
-  "filterInputColumns": false,
+  "filterInputColumns": true,
   "useGPU": false,
-  "keptInputColumns": [],
+  "keptInputColumns": [
+    "Trap",
+    "Date_parsed"
+  ],
   "pythonBatchSize": 100000,
   "gpuAllowGrowth": false,
-  "outputProbaPercentiles": false,
+  "outputProbaPercentiles": true,
   "outputProbabilities": true,
   "forceOriginalEngine": false,
   "individualExplanationParams": {
@@ -20,7 +23,7 @@
     "shapleyBackgroundSize": 100,
     "nbExplanations": 3
   },
-  "forcedClassifierThreshold": 0.0,
+  "forcedClassifierThreshold": 0,
   "batchSize": 100,
   "outputExplanations": false,
   "overrideModelSpecifiedThreshold": false,

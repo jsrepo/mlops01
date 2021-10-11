@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633926211751
+    "lastModifiedOn": 1633926241801
   },
   "creationTag": {
     "versionNumber": 0,
@@ -61,6 +61,138 @@
     "columns": [
       {
         "name": "Trap",
+        "type": "string"
+      },
+      {
+        "name": "Date",
+        "type": "string"
+      },
+      {
+        "name": "Date_parsed",
+        "type": "date"
+      },
+      {
+        "name": "year",
+        "type": "bigint"
+      },
+      {
+        "name": "Day_number",
+        "type": "bigint"
+      },
+      {
+        "name": "Address",
+        "type": "string"
+      },
+      {
+        "name": "Block",
+        "type": "bigint"
+      },
+      {
+        "name": "Street",
+        "type": "string"
+      },
+      {
+        "name": "AddressNumberAndStreet",
+        "type": "string"
+      },
+      {
+        "name": "Latitude",
+        "type": "double"
+      },
+      {
+        "name": "Longitude",
+        "type": "double"
+      },
+      {
+        "name": "AddressAccuracy",
+        "type": "bigint"
+      },
+      {
+        "name": "position",
+        "type": "string"
+      },
+      {
+        "name": "weather_Station",
+        "type": "bigint"
+      },
+      {
+        "name": "weather_Tmax",
+        "type": "bigint"
+      },
+      {
+        "name": "weather_Tmin",
+        "type": "bigint"
+      },
+      {
+        "name": "weather_Tavg",
+        "type": "string"
+      },
+      {
+        "name": "weather_Depart",
+        "type": "string"
+      },
+      {
+        "name": "weather_DewPoint",
+        "type": "bigint"
+      },
+      {
+        "name": "weather_WetBulb",
+        "type": "string"
+      },
+      {
+        "name": "weather_Heat",
+        "type": "string"
+      },
+      {
+        "name": "weather_Cool",
+        "type": "string"
+      },
+      {
+        "name": "weather_Sunrise",
+        "type": "string"
+      },
+      {
+        "name": "weather_Sunset",
+        "type": "string"
+      },
+      {
+        "name": "weather_CodeSum",
+        "type": "string"
+      },
+      {
+        "name": "weather_Depth",
+        "type": "string"
+      },
+      {
+        "name": "weather_Water1",
+        "type": "string"
+      },
+      {
+        "name": "weather_SnowFall",
+        "type": "string"
+      },
+      {
+        "name": "weather_PrecipTotal",
+        "type": "string"
+      },
+      {
+        "name": "weather_StnPressure",
+        "type": "string"
+      },
+      {
+        "name": "weather_SeaLevel",
+        "type": "string"
+      },
+      {
+        "name": "weather_ResultSpeed",
+        "type": "double"
+      },
+      {
+        "name": "weather_ResultDir",
+        "type": "bigint"
+      },
+      {
+        "name": "weather_AvgSpeed",
         "type": "string"
       },
       {

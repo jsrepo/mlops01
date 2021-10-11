@@ -178,11 +178,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 22,
+    "versionNumber": 26,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633920229005
+    "lastModifiedOn": 1633920389752
   },
   "creationTag": {
     "versionNumber": 0,
@@ -224,7 +224,36 @@
         "id": "cfff5f",
         "title": "1.19 User activity",
         "createdOn": 0,
-        "items": []
+        "items": [
+          {
+            "done": false,
+            "text": "a. Audit trail of user activity",
+            "createdOn": 1633920369788,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "b. User Adminisitration",
+            "createdOn": 1633920376441,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "c. Log Model usage",
+            "createdOn": 1633920382566,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "d. Model usage Monitoring",
+            "createdOn": 1633920389539,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          }
+        ]
       },
       {
         "id": "562673",

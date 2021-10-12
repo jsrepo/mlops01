@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633921781753
+    "lastModifiedOn": 1634078526620
   },
   "creationTag": {
     "versionNumber": 0,
@@ -71,7 +71,9 @@
     },
     "lastModifiedOn": 1633921781690
   },
-  "tags": [],
+  "tags": [
+    "Data:source"
+  ],
   "params": {
     "uploadFSProviderType": "Filesystem",
     "uploadedConfig": {

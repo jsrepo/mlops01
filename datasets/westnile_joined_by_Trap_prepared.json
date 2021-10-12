@@ -1,8 +1,24 @@
 {
   "type": "PostgreSQL",
   "managed": true,
+  "description": "### Final dataset from feature engineering\n",
   "checklists": {
-    "checklists": []
+    "checklists": [
+      {
+        "id": "26a4d1",
+        "title": "Todo list",
+        "createdOn": 0,
+        "items": [
+          {
+            "done": false,
+            "text": "check if daily validation is in place",
+            "createdOn": 1634078673850,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          }
+        ]
+      }
+    ]
   },
   "checks": [],
   "customMeta": {
@@ -28,11 +44,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633926278371
+    "lastModifiedOn": 1634078673981
   },
   "creationTag": {
     "versionNumber": 0,

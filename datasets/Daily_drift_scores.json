@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 35,
+    "versionNumber": 36,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634047307834
+    "lastModifiedOn": 1634047419244
   },
   "creationTag": {
     "versionNumber": 0,
@@ -296,7 +296,8 @@
         "softMaximumEnabled": false,
         "type": "numericRange",
         "meta": {
-          "name": "Value in range"
+          "name": "Value in range",
+          "label": "Model Drift check"
         },
         "computeOnBuildMode": "PARTITION"
       }

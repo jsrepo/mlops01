@@ -1,7 +1,16 @@
 {
   "name": "Team B - Feature Engineering",
   "color": "#F9BE40",
-  "items": [],
+  "items": [
+    {
+      "objectId": "compute_westnile_feature_engineering",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "westnile_feature_engineering",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},

@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 33,
+    "versionNumber": 34,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634047099584
+    "lastModifiedOn": 1634047110360
   },
   "creationTag": {
     "versionNumber": 0,
@@ -259,7 +259,8 @@
       "metrics": [
         "basic:COUNT_COLUMNS",
         "records:COUNT_RECORDS",
-        "col_stats:MAX:drift_model_accuracy"
+        "col_stats:MAX:drift_model_accuracy",
+        "py_plugin:py_plugin_model-drift_drift-score:drift_model_accuracy:Most recent drift score:Most recent drift score"
       ]
     }
   },

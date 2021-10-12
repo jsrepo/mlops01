@@ -1,7 +1,8 @@
 {
   "type": "PostgreSQL",
   "managed": true,
-  "description": "### Final dataset from feature engineering\n",
+  "description": "[Check for more information](https://lp-cms-production.imgix.net/2019-06/40d4f378a2dacf02a4e636bb2b214abb-lpl-agung_rai_museum_of_art_1.jpg?auto\u003dcompress\u0026crop\u003dcenter\u0026fit\u003dcrop\u0026format\u003dauto\u0026h\u003d416\u0026w\u003d960)",
+  "shortDesc": "Validate with BTN",
   "checklists": {
     "checklists": [
       {
@@ -44,11 +45,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634078673981
+    "lastModifiedOn": 1634078829676
   },
   "creationTag": {
     "versionNumber": 0,

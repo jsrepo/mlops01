@@ -5,7 +5,21 @@
     "columnsSelection": {
       "mode": "ALL"
     },
-    "columnWidthsByName": {},
+    "columnWidthsByName": {
+      "timestamp": 183,
+      "model_id": 106,
+      "version_id": 120,
+      "train_date": 148,
+      "drift_model_accuracy": 190,
+      "binomial_test_p_value": 197,
+      "accuracy_lower_bound": 190,
+      "accuracy_upper_bound": 190,
+      "fugacity": 300,
+      "fugacity_relative_change": 300,
+      "most_drifted_features": 421,
+      "most_important_features_in_deployed_model": 300,
+      "riskiest_features": 143
+    },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
@@ -40,7 +54,9 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"

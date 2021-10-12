@@ -5,11 +5,11 @@
   "name": "Model Drift Monitoring",
   "active": false,
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633952159745
+    "lastModifiedOn": 1634029808706
   },
   "checklists": {
     "checklists": []
@@ -54,6 +54,21 @@
       },
       "id": "lMvfaAOf",
       "name": "Model Drift - Nile Virus",
+      "runConditionEnabled": true,
+      "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
+      "phase": "END"
+    },
+    {
+      "active": true,
+      "messaging": {
+        "type": "msft-teams-scenario",
+        "configuration": {
+          "message": "${if(outcome \u003d\u003d \u0027SUCCESS\u0027, \u0027\u0026#x2705;\u0027, \u0027\u0027)}${if(outcome \u003d\u003d \u0027FAILED\u0027, \u0027\u0026#x1F534;\u0027, \u0027\u0027)}${if(outcome \u003d\u003d \u0027WARNING\u0027, \u0027\u0026#x1F536;\u0027, \u0027\u0027)}${if(outcome \u003d\u003d \u0027\u0027 || outcome \u003d\u003d \u0027N/A\u0027, \u0027\u0026#x1F514;\u0027, \u0027\u0027)} DSS Scenario [${scenarioName}](${scenarioRunURL}) triggered by ${triggerName}: **${outcome}**",
+          "webhookUrl": "https://ikuiku.webhook.office.com/webhookb2/1d899ac7-33e1-442b-b0ca-475eee685e14@46de9a18-f826-49ea-ae07-61dd0f86f4ba/IncomingWebhook/710c30bd21204df8b14e86d463a247a2/3af1d95b-6c41-4845-bf51-21a2883894d9",
+          "useProxy": true
+        }
+      },
+      "id": "nqsd4ooM",
       "runConditionEnabled": true,
       "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
       "phase": "END"

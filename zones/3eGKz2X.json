@@ -1,7 +1,16 @@
 {
   "name": "Team A - Model Development",
   "color": "#F9BE40",
-  "items": [],
+  "items": [
+    {
+      "objectId": "train_Prediction__XGBOOST_CLASSIFICATION__on_past",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "4iWX8SGb",
+      "objectType": "SAVED_MODEL"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},

@@ -98,7 +98,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -186,7 +186,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -207,7 +207,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -270,7 +270,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -291,7 +291,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -312,7 +312,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -384,7 +384,7 @@
         "nb_bins_hashing": 1048576,
         "hash_whole_categories": true,
         "dummy_drop": "AUTO",
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -405,7 +405,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -426,7 +426,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -468,7 +468,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -489,7 +489,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -510,7 +510,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -552,7 +552,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -597,7 +597,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -733,7 +733,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -754,7 +754,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -775,7 +775,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -855,7 +855,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -876,7 +876,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,

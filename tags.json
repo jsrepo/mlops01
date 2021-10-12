@@ -2,6 +2,7 @@
   "tags": {
     "base:POC": {},
     "Country:Indonesia": {},
-    "Data:source": {}
+    "Data:source": {},
+    "Data:temp": {}
   }
 }

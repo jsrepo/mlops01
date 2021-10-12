@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "jiseong.admin"
     },
-    "lastModifiedOn": 1634056885890
+    "lastModifiedOn": 1634057097322
   },
   "creationTag": {
     "versionNumber": 0,
@@ -64,10 +64,6 @@
         "type": "string"
       },
       {
-        "name": "Date",
-        "type": "string"
-      },
-      {
         "name": "Date_parsed",
         "type": "date"
       },
@@ -78,10 +74,6 @@
       {
         "name": "Day_number",
         "type": "bigint"
-      },
-      {
-        "name": "Address",
-        "type": "string"
       },
       {
         "name": "Block",
@@ -106,10 +98,6 @@
       {
         "name": "AddressAccuracy",
         "type": "bigint"
-      },
-      {
-        "name": "position",
-        "type": "string"
       },
       {
         "name": "weather_Station",
@@ -158,10 +146,6 @@
       {
         "name": "daylight_time",
         "type": "double"
-      },
-      {
-        "name": "weather_CodeSum",
-        "type": "string"
       },
       {
         "name": "weather_SnowFall",

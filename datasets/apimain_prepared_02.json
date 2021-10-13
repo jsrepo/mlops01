@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634087823996
+    "lastModifiedOn": 1634087994275
   },
   "creationTag": {
     "versionNumber": 0,
@@ -124,7 +124,121 @@
       },
       {
         "name": "col_9",
+        "type": "object",
+        "meaning": "JSONObjectMeaning",
+        "objectFields": []
+      },
+      {
+        "name": "col_9_msgType",
         "type": "string"
+      },
+      {
+        "name": "col_9_apinodeQueryType",
+        "type": "string"
+      },
+      {
+        "name": "col_9_serviceId",
+        "type": "string"
+      },
+      {
+        "name": "col_9_endpointId",
+        "type": "string"
+      },
+      {
+        "name": "col_9_serviceGenerationId",
+        "type": "string"
+      },
+      {
+        "name": "col_9_batchSize",
+        "type": "bigint"
+      },
+      {
+        "name": "col_9_batchIdx",
+        "type": "bigint"
+      },
+      {
+        "name": "col_9_timing",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "col_9_timing_preProcessing",
+        "type": "bigint"
+      },
+      {
+        "name": "col_9_timing_wait",
+        "type": "bigint"
+      },
+      {
+        "name": "col_9_timing_enrich",
+        "type": "bigint"
+      },
+      {
+        "name": "col_9_timing_preparation",
+        "type": "bigint"
+      },
+      {
+        "name": "col_9_timing_prediction",
+        "type": "bigint"
+      },
+      {
+        "name": "col_9_timing_postProcessing",
+        "type": "bigint"
+      },
+      {
+        "name": "col_9_apiContext",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "col_9_features",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "col_9_savedModel",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "col_9_apiDeployerDeployment",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "col_9_result",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
       },
       {
         "name": "col_10",

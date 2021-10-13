@@ -5,18 +5,18 @@
   "name": "Input Data Validation",
   "active": false,
   "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1634095323222
-  },
-  "versionTag": {
     "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1634095383664
+  },
+  "versionTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1634095391481
   },
   "checklists": {
     "checklists": []
@@ -29,25 +29,6 @@
   "tags": [],
   "triggers": [],
   "reporters": [
-    {
-      "active": true,
-      "messaging": {
-        "type": "slack-scenario",
-        "configuration": {
-          "message": "DSS Scenario \u003c${scenarioRunURL}|${scenarioName}\u003e triggered by ${triggerName} : ${outcome} ${if(outcome \u003d\u003d \u0027SUCCESS\u0027, \u0027:white_check_mark:\u0027, \u0027\u0027)}${if(outcome \u003d\u003d \u0027FAILED\u0027, \u0027:red_circle:\u0027, \u0027\u0027)}${if(outcome \u003d\u003d \u0027WARNING\u0027, \u0027:red_circle:\u0027, \u0027\u0027)}${if(outcome \u003d\u003d \u0027\u0027 || outcome \u003d\u003d \u0027N/A\u0027, \u0027:bell:\u0027, \u0027\u0027)}",
-          "messageMode": "TEXT_MESSAGE",
-          "blocks": "[\n    {\n        \"type\": \"section\",\n        \"text\": {\n            \"type\": \"mrkdwn\",\n            \"text\": \"*DSS Scenario \u003c${scenarioRunURL}|${scenarioName}\u003e:* ${outcome} ${if(outcome \u003d\u003d \u0027SUCCESS\u0027, \u0027:white_check_mark:\u0027, \u0027\u0027)}${if(outcome \u003d\u003d \u0027FAILED\u0027, \u0027:red_circle:\u0027, \u0027\u0027)}${if(outcome \u003d\u003d \u0027WARNING\u0027, \u0027:red_circle:\u0027, \u0027\u0027)}${if(outcome \u003d\u003d \u0027\u0027 || outcome \u003d\u003d \u0027N/A\u0027, \u0027:bell:\u0027, \u0027\u0027)}\"\n        }\n    },\n    {\n        \"type\": \"context\",\n        \"elements\": [\n            {\n                \"type\": \"mrkdwn\",\n                \"text\": \"Triggered by ${triggerName}\"\n            }\n        ]\n    }\n]\n",
-          "mode": "WEBHOOK",
-          "useProxy": true,
-          "asUser": false,
-          "linkNames": false
-        }
-      },
-      "id": "KLJ0syQS",
-      "runConditionEnabled": true,
-      "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
-      "phase": "END"
-    },
     {
       "active": true,
       "messaging": {

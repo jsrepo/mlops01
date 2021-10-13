@@ -5,6 +5,14 @@
     {
       "objectId": "apimain",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "apimain_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_apimain_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],

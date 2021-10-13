@@ -275,11 +275,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 39,
+    "versionNumber": 45,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634089641806
+    "lastModifiedOn": 1634090192415
   },
   "creationTag": {
     "versionNumber": 0,
@@ -297,38 +297,44 @@
   "checklists": {
     "checklists": [
       {
-        "title": "Your new project\u0027s Todo",
+        "title": "1.18 Deployment",
         "createdOn": 0,
         "items": [
           {
-            "done": true,
-            "text": "Create the project",
+            "done": false,
+            "text": "a. Deploy Model to other environtment",
             "createdOn": 1627015254331,
             "createdBy": "admin",
             "stateChangedOn": 0
           },
           {
             "done": false,
-            "text": "Set a project image (click on the color next to the project title)",
-            "createdOn": 1627015254331,
-            "createdBy": "admin",
-            "stateChangedOn": 0
-          },
-          {
-            "done": true,
-            "text": "Import your [first dataset](projects/TEST_SNOWFLAKE/datasets/new/)",
-            "createdOn": 1627015254331,
-            "createdBy": "admin",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Organize your work by replacing this with a real todo",
+            "text": "b. Deploy model using API service",
             "createdOn": 1627015254331,
             "createdBy": "admin",
             "stateChangedOn": 0
           }
         ]
+      },
+      {
+        "id": "5e1e86",
+        "title": "1.19 User Activity",
+        "createdOn": 0,
+        "items": [
+          {
+            "done": false,
+            "text": "a. Audit trail of user activity",
+            "createdOn": 1634090192175,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          }
+        ]
+      },
+      {
+        "id": "f6e9ce",
+        "title": "1.20 Model Documentation",
+        "createdOn": 0,
+        "items": []
       }
     ]
   }

@@ -115,7 +115,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "RemoveRowsOnEmpty",
@@ -125,6 +125,25 @@
         ],
         "keep": false,
         "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "",
+        "formats": [
+          "yyyy/MM/dd-HH:mm:ss.SSS"
+        ],
+        "columns": [
+          "col_0"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
       },
       "alwaysShowComment": false
     }
@@ -143,6 +162,7 @@
     "col_9_msgType": 113,
     "col_9_timing_wait": 143,
     "col_9_savedModel": 183,
+    "col_0_parsed": 183,
     "col_6": 100,
     "col_5": 100,
     "col_4": 100,

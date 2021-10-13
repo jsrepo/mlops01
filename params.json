@@ -10,6 +10,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "HG8Zgq6O",
+          "objectType": "SAVED_MODEL"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -266,11 +275,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 38,
+    "versionNumber": 39,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634088611549
+    "lastModifiedOn": 1634089641806
   },
   "creationTag": {
     "versionNumber": 0,

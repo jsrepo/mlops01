@@ -26,8 +26,118 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "[",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "col_0"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "designTimeReport": {
+        "report": {
+          "createdColumnCount": 5
+        }
+      },
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnSplitter",
+      "params": {
+        "inCol": "col_2",
+        "keepEmptyChunks": false,
+        "limit": 0,
+        "separator": "] ",
+        "outColPrefix": "col_2_",
+        "limitOutput": false,
+        "target": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsConcat",
+      "params": {
+        "outputColumn": "Date-time",
+        "columns": [
+          "col_0",
+          "col_1",
+          "col_2_0"
+        ],
+        "join": ":"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "formats": [
+          "yyyy/MM/dd-HH:mm:ss.SSS"
+        ],
+        "columns": [
+          "Date-time"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RemoveRowsOnEmpty",
+      "params": {
+        "columns": [
+          "Date-time"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "col_2_1"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -35,7 +145,69 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "col_10": 162,
+    "": 100,
+    "col_11": 100,
+    "col": 100,
+    "col_52": 100,
+    "col_50": 100,
+    "col_51": 113,
+    "col_6": 134,
+    "col_5": 100,
+    "col_4": 100,
+    "col_3": 220,
+    "col_2": 197,
+    "col_1": 190,
+    "col_0": 300,
+    "col_49": 100,
+    "col_47": 100,
+    "col_9": 113,
+    "col_48": 100,
+    "col_8": 100,
+    "col_45": 100,
+    "col_7": 100,
+    "col_46": 100,
+    "col_43": 176,
+    "col_44": 100,
+    "col_41": 176,
+    "col_42": 100,
+    "col_40": 106,
+    "Date-time": 291,
+    "col_2_0": 100,
+    "col_2_1": 148,
+    "col_2_2": 100,
+    "col_2_3": 183,
+    "col_2_4": 127,
+    "col_38": 100,
+    "col_39": 100,
+    "col_36": 100,
+    "col_37": 100,
+    "col_34": 100,
+    "col_35": 176,
+    "col_32": 100,
+    "col_33": 127,
+    "col_30": 127,
+    "col_31": 100,
+    "col_29": 100,
+    "col_27": 100,
+    "col_28": 100,
+    "col_25": 162,
+    "col_26": 100,
+    "col_23": 162,
+    "col_24": 100,
+    "col_21": 100,
+    "col_22": 106,
+    "col_20": 100,
+    "col_18": 100,
+    "col_19": 100,
+    "col_16": 100,
+    "col_17": 100,
+    "col_14": 100,
+    "col_15": 100,
+    "col_12": 100,
+    "col_13": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {

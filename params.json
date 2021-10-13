@@ -32,8 +32,30 @@
       "exportGitRepository": false,
       "exportInsightsData": false,
       "useManualPluginsInfo": false,
-      "includedDatasetsData": [],
-      "includedSavedModels": [],
+      "includedDatasetsData": [
+        {
+          "name": "weather",
+          "type": "UploadedFiles"
+        },
+        {
+          "name": "westnile_data_after_2010",
+          "type": "UploadedFiles"
+        },
+        {
+          "name": "westnile_until_2009",
+          "type": "UploadedFiles"
+        }
+      ],
+      "includedSavedModels": [
+        {
+          "id": "4iWX8SGb",
+          "name": "Prediction (XGBOOST_CLASSIFICATION) on past"
+        },
+        {
+          "id": "HG8Zgq6O",
+          "name": "Prediction (RANDOM_FOREST_CLASSIFICATION) on past"
+        }
+      ],
       "includedModelEvaluationStores": [],
       "includedManagedFolders": [],
       "shareAllInputDatasets": false
@@ -213,11 +235,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 36,
+    "versionNumber": 37,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633954977657
+    "lastModifiedOn": 1634086576576
   },
   "creationTag": {
     "versionNumber": 0,

@@ -7,10 +7,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 1,
+              "top": 0,
               "left": 0,
-              "width": 7,
-              "height": 5
+              "width": 4,
+              "height": 3
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -30,9 +30,9 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 6,
-              "left": 0,
-              "width": 7,
+              "top": 0,
+              "left": 4,
+              "width": 6,
               "height": 3
             },
             "clickAction": "OPEN_INSIGHT",
@@ -55,6 +55,392 @@
       },
       "title": "Model Accuracy Drift Score",
       "showTitle": false
+    },
+    {
+      "id": "mf14BWz",
+      "grid": {
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 2,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "summary",
+              "advancedOptions": {
+                "interactiveScoring": {
+                  "featuresOrder": [
+                    "Street",
+                    "Trap",
+                    "weather_Sunset",
+                    "Day_number",
+                    "daylight_time",
+                    "weather_Sunrise",
+                    "Longitude",
+                    "Date_parsed",
+                    "Date",
+                    "Latitude",
+                    "Block",
+                    "weather_Tmax",
+                    "weather_CodeSum",
+                    "weather_WetBulb",
+                    "weather_Tavg",
+                    "weather_Depart",
+                    "year",
+                    "weather_Tmin",
+                    "weather_DewPoint",
+                    "weather_ResultSpeed",
+                    "weather_Cool",
+                    "weather_AvgSpeed",
+                    "weather_SeaLevel",
+                    "weather_StnPressure",
+                    "weather_ResultDir",
+                    "weather_PrecipTotal",
+                    "AddressAccuracy",
+                    "weather_Heat",
+                    "weather_SnowFall"
+                  ]
+                }
+              }
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "jwx2Yn8",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 2,
+              "width": 4,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "variables_importance",
+              "advancedOptions": {
+                "interactiveScoring": {
+                  "featuresOrder": [
+                    "Street",
+                    "Trap",
+                    "weather_Sunset",
+                    "Day_number",
+                    "daylight_time",
+                    "weather_Sunrise",
+                    "Longitude",
+                    "Date_parsed",
+                    "Date",
+                    "Latitude",
+                    "Block",
+                    "weather_Tmax",
+                    "weather_CodeSum",
+                    "weather_WetBulb",
+                    "weather_Tavg",
+                    "weather_Depart",
+                    "year",
+                    "weather_Tmin",
+                    "weather_DewPoint",
+                    "weather_ResultSpeed",
+                    "weather_Cool",
+                    "weather_AvgSpeed",
+                    "weather_SeaLevel",
+                    "weather_StnPressure",
+                    "weather_ResultDir",
+                    "weather_PrecipTotal",
+                    "AddressAccuracy",
+                    "weather_Heat",
+                    "weather_SnowFall"
+                  ]
+                }
+              }
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "ihRs34d",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 2,
+              "left": 4,
+              "width": 4,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "individual_explanations",
+              "advancedOptions": {
+                "interactiveScoring": {
+                  "featuresOrder": [
+                    "Street",
+                    "Trap",
+                    "weather_Sunset",
+                    "Day_number",
+                    "daylight_time",
+                    "weather_Sunrise",
+                    "Longitude",
+                    "Date_parsed",
+                    "Date",
+                    "Latitude",
+                    "Block",
+                    "weather_Tmax",
+                    "weather_CodeSum",
+                    "weather_WetBulb",
+                    "weather_Tavg",
+                    "weather_Depart",
+                    "year",
+                    "weather_Tmin",
+                    "weather_DewPoint",
+                    "weather_ResultSpeed",
+                    "weather_Cool",
+                    "weather_AvgSpeed",
+                    "weather_SeaLevel",
+                    "weather_StnPressure",
+                    "weather_ResultDir",
+                    "weather_PrecipTotal",
+                    "AddressAccuracy",
+                    "weather_Heat",
+                    "weather_SnowFall"
+                  ]
+                }
+              }
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "LxyHuge",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 2,
+              "left": 0,
+              "width": 4,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "subpopulation",
+              "advancedOptions": {
+                "interactiveScoring": {
+                  "featuresOrder": [
+                    "Street",
+                    "Trap",
+                    "weather_Sunset",
+                    "Day_number",
+                    "daylight_time",
+                    "weather_Sunrise",
+                    "Longitude",
+                    "Date_parsed",
+                    "Date",
+                    "Latitude",
+                    "Block",
+                    "weather_Tmax",
+                    "weather_CodeSum",
+                    "weather_WetBulb",
+                    "weather_Tavg",
+                    "weather_Depart",
+                    "year",
+                    "weather_Tmin",
+                    "weather_DewPoint",
+                    "weather_ResultSpeed",
+                    "weather_Cool",
+                    "weather_AvgSpeed",
+                    "weather_SeaLevel",
+                    "weather_StnPressure",
+                    "weather_ResultDir",
+                    "weather_PrecipTotal",
+                    "AddressAccuracy",
+                    "weather_Heat",
+                    "weather_SnowFall"
+                  ]
+                }
+              }
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "u6MAyDM",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 6,
+              "width": 2,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "bc_confusion",
+              "advancedOptions": {
+                "interactiveScoring": {
+                  "featuresOrder": [
+                    "Street",
+                    "Trap",
+                    "weather_Sunset",
+                    "Day_number",
+                    "daylight_time",
+                    "weather_Sunrise",
+                    "Longitude",
+                    "Date_parsed",
+                    "Date",
+                    "Latitude",
+                    "Block",
+                    "weather_Tmax",
+                    "weather_CodeSum",
+                    "weather_WetBulb",
+                    "weather_Tavg",
+                    "weather_Depart",
+                    "year",
+                    "weather_Tmin",
+                    "weather_DewPoint",
+                    "weather_ResultSpeed",
+                    "weather_Cool",
+                    "weather_AvgSpeed",
+                    "weather_SeaLevel",
+                    "weather_StnPressure",
+                    "weather_ResultDir",
+                    "weather_PrecipTotal",
+                    "AddressAccuracy",
+                    "weather_Heat",
+                    "weather_SnowFall"
+                  ]
+                }
+              }
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "uDK3UkL",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 4,
+              "left": 4,
+              "width": 4,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "train",
+              "advancedOptions": {
+                "interactiveScoring": {
+                  "featuresOrder": [
+                    "Street",
+                    "Trap",
+                    "weather_Sunset",
+                    "Day_number",
+                    "daylight_time",
+                    "weather_Sunrise",
+                    "Longitude",
+                    "Date_parsed",
+                    "Date",
+                    "Latitude",
+                    "Block",
+                    "weather_Tmax",
+                    "weather_CodeSum",
+                    "weather_WetBulb",
+                    "weather_Tavg",
+                    "weather_Depart",
+                    "year",
+                    "weather_Tmin",
+                    "weather_DewPoint",
+                    "weather_ResultSpeed",
+                    "weather_Cool",
+                    "weather_AvgSpeed",
+                    "weather_SeaLevel",
+                    "weather_StnPressure",
+                    "weather_ResultDir",
+                    "weather_PrecipTotal",
+                    "AddressAccuracy",
+                    "weather_Heat",
+                    "weather_SnowFall"
+                  ]
+                }
+              }
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "V6tRzts",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 4,
+              "left": 0,
+              "width": 4,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "interactive_scoring",
+              "advancedOptions": {
+                "interactiveScoring": {
+                  "featuresOrder": [
+                    "Street",
+                    "Trap",
+                    "weather_Sunset",
+                    "Day_number",
+                    "daylight_time",
+                    "weather_Sunrise",
+                    "Longitude",
+                    "Date_parsed",
+                    "Date",
+                    "Latitude",
+                    "Block",
+                    "weather_Tmax",
+                    "weather_CodeSum",
+                    "weather_WetBulb",
+                    "weather_Tavg",
+                    "weather_Depart",
+                    "year",
+                    "weather_Tmin",
+                    "weather_DewPoint",
+                    "weather_ResultSpeed",
+                    "weather_Cool",
+                    "weather_AvgSpeed",
+                    "weather_SeaLevel",
+                    "weather_StnPressure",
+                    "weather_ResultDir",
+                    "weather_PrecipTotal",
+                    "AddressAccuracy",
+                    "weather_Heat",
+                    "weather_SnowFall"
+                  ]
+                }
+              }
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "rjaqMZt",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
+      },
+      "showTitle": false
     }
   ],
   "owner": "admin",
@@ -62,11 +448,11 @@
   "name": "OC-BETA-Model Documentation\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634089601819
+    "lastModifiedOn": 1634089813232
   },
   "creationTag": {
     "versionNumber": 0,

@@ -1,13 +1,25 @@
 {
   "name": "1.19 User activity",
   "layout": "WIKI_ARTICLE",
-  "attachments": [],
+  "attachments": [
+    {
+      "attachmentType": "FILE",
+      "smartId": "NEM5J9pJXoYv",
+      "details": {
+        "objectDisplayName": "project_permssion02.png",
+        "size": 45125,
+        "mimeType": "image/png"
+      },
+      "attachedBy": "admin",
+      "attachedOn": 1634089068377
+    }
+  ],
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634088560441
+    "lastModifiedOn": 1634089068377
   },
   "creationTag": {
     "versionNumber": 0,

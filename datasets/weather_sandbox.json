@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634095142455
+    "lastModifiedOn": 1634095287482
   },
   "creationTag": {
     "versionNumber": 0,
@@ -288,7 +288,59 @@
   },
   "metricsChecks": {
     "runOnBuild": false,
-    "checks": [],
+    "checks": [
+      {
+        "metricId": "col_stats:COUNT_DISTINCT:Station",
+        "minimum": 2.0,
+        "maximum": 10.0,
+        "softMinimum": 0.0,
+        "softMaximum": 0.0,
+        "minimumEnabled": true,
+        "maximumEnabled": true,
+        "softMinimumEnabled": false,
+        "softMaximumEnabled": false,
+        "type": "numericRange",
+        "meta": {
+          "name": "Value in range",
+          "label": "No of station"
+        },
+        "computeOnBuildMode": "PARTITION"
+      },
+      {
+        "metricId": "records:COUNT_RECORDS",
+        "minimum": 1000.0,
+        "maximum": 3000.0,
+        "softMinimum": 0.0,
+        "softMaximum": 0.0,
+        "minimumEnabled": true,
+        "maximumEnabled": true,
+        "softMinimumEnabled": false,
+        "softMaximumEnabled": false,
+        "type": "numericRange",
+        "meta": {
+          "name": "Value in range",
+          "label": "No of rows"
+        },
+        "computeOnBuildMode": "PARTITION"
+      },
+      {
+        "metricId": "basic:COUNT_COLUMNS",
+        "minimum": 10.0,
+        "maximum": 22.0,
+        "softMinimum": 0.0,
+        "softMaximum": 0.0,
+        "minimumEnabled": true,
+        "maximumEnabled": true,
+        "softMinimumEnabled": false,
+        "softMaximumEnabled": false,
+        "type": "numericRange",
+        "meta": {
+          "name": "Value in range",
+          "label": "No of columns"
+        },
+        "computeOnBuildMode": "PARTITION"
+      }
+    ],
     "displayedState": {
       "partition": "NP",
       "checks": []

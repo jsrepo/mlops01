@@ -12,14 +12,25 @@
       },
       "attachedBy": "admin",
       "attachedOn": 1634089068377
+    },
+    {
+      "attachmentType": "FILE",
+      "smartId": "jGqOgjjCN6pL",
+      "details": {
+        "objectDisplayName": "project_permission.png",
+        "size": 116324,
+        "mimeType": "image/png"
+      },
+      "attachedBy": "admin",
+      "attachedOn": 1634089068492
     }
   ],
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634089068377
+    "lastModifiedOn": 1634089068492
   },
   "creationTag": {
     "versionNumber": 0,

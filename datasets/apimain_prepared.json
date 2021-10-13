@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634087372912
+    "lastModifiedOn": 1634087731405
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,7 +88,8 @@
     "columns": [
       {
         "name": "col_0",
-        "type": "string"
+        "type": "date",
+        "meaning": "Text"
       },
       {
         "name": "col_1",
@@ -96,6 +97,26 @@
       },
       {
         "name": "col_2",
+        "type": "string"
+      },
+      {
+        "name": "col_2_0",
+        "type": "double"
+      },
+      {
+        "name": "Date-time",
+        "type": "string"
+      },
+      {
+        "name": "col_2_2",
+        "type": "string"
+      },
+      {
+        "name": "col_2_3",
+        "type": "string"
+      },
+      {
+        "name": "col_2_4",
         "type": "string"
       },
       {

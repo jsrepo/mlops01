@@ -62,7 +62,16 @@
       "partition": "NP",
       "columns": [],
       "metrics": [
-        "reporting:BUILD_DURATION"
+        "reporting:BUILD_DURATION",
+        "model_perf:RECALL",
+        "model_perf:PRECISION",
+        "model_perf:LOGLOSS",
+        "model_perf:LIFT",
+        "model_perf:F1",
+        "model_perf:CALIBRATIONLOSS",
+        "model_perf:ACCURACY",
+        "check:CHECK:AUC Check",
+        "model_perf:AUC"
       ]
     }
   },
@@ -1808,11 +1817,11 @@
     "labels": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634089517205
+    "lastModifiedOn": 1634089550001
   },
   "creationTag": {
     "versionNumber": 0,

@@ -275,11 +275,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 45,
+    "versionNumber": 59,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634090192415
+    "lastModifiedOn": 1634090568286
   },
   "creationTag": {
     "versionNumber": 0,
@@ -327,6 +327,41 @@
             "createdOn": 1634090192175,
             "createdBy": "admin",
             "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "b. User Adminisitration",
+            "createdOn": 1634090420815,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "c. Log Model usage",
+            "createdOn": 1634090428604,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "e. Tools usage monitoring",
+            "createdOn": 1634090437646,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "f. Demonstrate restriction to limit editability of data pipeline to limited user (e.g view only right, view \u0026 edit)",
+            "createdOn": 1634090452475,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "g. Demonstrate ability for multiple user to collaborate on data pipeline/recipe/workflow",
+            "createdOn": 1634090463880,
+            "createdBy": "admin",
+            "stateChangedOn": 0
           }
         ]
       },
@@ -334,7 +369,64 @@
         "id": "f6e9ce",
         "title": "1.20 Model Documentation",
         "createdOn": 0,
-        "items": []
+        "items": [
+          {
+            "done": false,
+            "text": "a. Model Owner (can be linked to active directory)",
+            "createdOn": 1634090485332,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "b. Model ID",
+            "createdOn": 1634090526014,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "c. Model Version",
+            "createdOn": 1634090532743,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "d. Status (e.g. active, experiment, deprecated)",
+            "createdOn": 1634090539177,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "e. Alerts for drift, outlier etc",
+            "createdOn": 1634090546389,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "g. Model documentation",
+            "createdOn": 1634090553418,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "h. Model document output in HTML format",
+            "createdOn": 1634090560372,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "i. Model document output in Word format",
+            "createdOn": 1634090568076,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          }
+        ]
       }
     ]
   }

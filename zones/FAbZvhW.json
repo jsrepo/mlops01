@@ -1,7 +1,12 @@
 {
   "name": "API logs",
   "color": "#31439C",
-  "items": [],
+  "items": [
+    {
+      "objectId": "apimain",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},

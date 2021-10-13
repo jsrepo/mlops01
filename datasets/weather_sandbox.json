@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634095056449
+    "lastModifiedOn": 1634095123916
   },
   "creationTag": {
     "versionNumber": 0,
@@ -177,14 +177,23 @@
       },
       {
         "type": "col_stats",
-        "enabled": false,
-        "computeOnBuildMode": "NO",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
         "meta": {
           "name": "Columns statistics",
           "level": 2
         },
         "configuration": {
-          "aggregates": []
+          "aggregates": [
+            {
+              "column": "Station",
+              "aggregated": "COUNT_DISTINCT"
+            },
+            {
+              "column": "Station",
+              "aggregated": "HISTOGRAM"
+            }
+          ]
         }
       },
       {

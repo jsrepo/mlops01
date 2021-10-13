@@ -90,7 +90,6 @@
     "displayedState": {
       "partition": "NP",
       "checks": [
-        "Value in set of model_perf:AUC",
         "AUC Check"
       ]
     }
@@ -1809,11 +1808,11 @@
     "labels": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634089506230
+    "lastModifiedOn": 1634089517205
   },
   "creationTag": {
     "versionNumber": 0,

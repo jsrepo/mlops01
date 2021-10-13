@@ -26,8 +26,95 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "[",
+            "to": ""
+          },
+          {
+            "from": "]",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "col_0",
+          "col_1",
+          "col_2",
+          "col_3"
+        ],
+        "appliesTo": "COLUMNS",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "Emit",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "col_9"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "JSONFlattener",
+      "params": {
+        "maxDepth": 1,
+        "inCol": "col_9",
+        "nullAsEmpty": true,
+        "prefixOutputs": true,
+        "flattenArrays": false,
+        "separator": "_"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "JSONFlattener",
+      "params": {
+        "maxDepth": 1,
+        "inCol": "col_9_timing",
+        "nullAsEmpty": true,
+        "prefixOutputs": true,
+        "flattenArrays": false,
+        "separator": "_"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -35,7 +122,38 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "col_10": 100,
+    "col_9_timing_prediction": 188,
+    "col_9_timing_postProcessing": 218,
+    "col_9_msgType": 113,
+    "col_9_timing_wait": 143,
+    "col_9_savedModel": 183,
+    "col_6": 100,
+    "col_5": 100,
+    "col_4": 100,
+    "col_9_serviceGenerationId": 203,
+    "col_9_timing": 183,
+    "col_3": 674,
+    "col_2": 100,
+    "col_1": 300,
+    "col_0": 120,
+    "col_9_batchSize": 128,
+    "col_9_apiDeployerDeployment": 218,
+    "col_9_result": 183,
+    "col_9": 300,
+    "col_8": 100,
+    "col_7": 100,
+    "col_9_batchIdx": 120,
+    "col_9_apiContext": 183,
+    "col_9_apinodeQueryType": 180,
+    "col_9_endpointId": 135,
+    "col_9_timing_preparation": 195,
+    "col_9_features": 197,
+    "col_9_timing_enrich": 158,
+    "col_9_timing_preProcessing": 210,
+    "col_9_serviceId": 128
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {

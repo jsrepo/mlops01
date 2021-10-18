@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634544209379
+    "lastModifiedOn": 1634544222898
   },
   "creationTag": {
     "versionNumber": 0,
@@ -100,7 +100,7 @@
       {
         "type": "col_stats",
         "enabled": true,
-        "computeOnBuildMode": "NO",
+        "computeOnBuildMode": "PARTITION",
         "meta": {
           "name": "Columns statistics",
           "level": 2
@@ -110,6 +110,10 @@
             {
               "column": "auc_lag_diff",
               "aggregated": "MEAN"
+            },
+            {
+              "column": "auc_lag_diff",
+              "aggregated": "MAX"
             }
           ]
         }

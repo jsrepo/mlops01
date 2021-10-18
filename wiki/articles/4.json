@@ -34,14 +34,25 @@
       },
       "attachedBy": "admin",
       "attachedOn": 1634565092582
+    },
+    {
+      "attachmentType": "FILE",
+      "smartId": "RuDhZYrhe3Ez",
+      "details": {
+        "objectDisplayName": "Screen Shot 2021-10-18 at 9.50.10 PM.png",
+        "size": 1565622,
+        "mimeType": "image/png"
+      },
+      "attachedBy": "admin",
+      "attachedOn": 1634565092741
     }
   ],
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634565092582
+    "lastModifiedOn": 1634565092741
   },
   "creationTag": {
     "versionNumber": 0,

@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634544188788
+    "lastModifiedOn": 1634544209379
   },
   "creationTag": {
     "versionNumber": 0,
@@ -203,7 +203,24 @@
   },
   "metricsChecks": {
     "runOnBuild": false,
-    "checks": [],
+    "checks": [
+      {
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "softMinimum": 0.0,
+        "softMaximum": 0.0,
+        "minimumEnabled": false,
+        "maximumEnabled": false,
+        "softMinimumEnabled": false,
+        "softMaximumEnabled": false,
+        "type": "numericRange",
+        "meta": {
+          "name": "Value in range",
+          "label": "avg auc score"
+        },
+        "computeOnBuildMode": "PARTITION"
+      }
+    ],
     "displayedState": {
       "partition": "NP",
       "checks": []

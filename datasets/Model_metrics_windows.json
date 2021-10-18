@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634544233078
+    "lastModifiedOn": 1634544277715
   },
   "creationTag": {
     "versionNumber": 0,
@@ -211,11 +211,12 @@
     "runOnBuild": false,
     "checks": [
       {
-        "minimum": 0.0,
+        "metricId": "col_stats:MEAN:auc_lag_diff",
+        "minimum": -0.1,
         "maximum": 0.0,
         "softMinimum": 0.0,
         "softMaximum": 0.0,
-        "minimumEnabled": false,
+        "minimumEnabled": true,
         "maximumEnabled": false,
         "softMinimumEnabled": false,
         "softMaximumEnabled": false,

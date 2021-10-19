@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633952314764
+    "lastModifiedOn": 1634633925671
   },
   "creationTag": {
     "versionNumber": 0,
@@ -66,6 +66,14 @@
       {
         "name": "Date_parsed",
         "type": "date"
+      },
+      {
+        "name": "Latitude",
+        "type": "double"
+      },
+      {
+        "name": "Longitude",
+        "type": "double"
       },
       {
         "name": "proba_0",

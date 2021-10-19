@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
-      "login": "admin"
+      "login": "nanae"
     },
-    "lastModifiedOn": 1634095500478
+    "lastModifiedOn": 1634603533424
   },
   "creationTag": {
     "versionNumber": 0,
@@ -282,7 +282,9 @@
         "records:COUNT_RECORDS",
         "reporting:METRICS_COMPUTATION_DURATION",
         "col_stats:COUNT_DISTINCT:Station",
-        "col_stats:HISTOGRAM:Station"
+        "col_stats:HISTOGRAM:Station",
+        "col_stats:MAX:Station",
+        "col_stats:MIN:Station"
       ]
     }
   },

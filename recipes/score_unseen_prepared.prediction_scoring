@@ -9,7 +9,9 @@
   "useGPU": false,
   "keptInputColumns": [
     "Trap",
-    "Date_parsed"
+    "Date_parsed",
+    "Latitude",
+    "Longitude"
   ],
   "pythonBatchSize": 100000,
   "gpuAllowGrowth": false,

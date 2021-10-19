@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
-      "login": "admin"
+      "login": "nanae"
     },
-    "lastModifiedOn": 1634544277715
+    "lastModifiedOn": 1634602221777
   },
   "creationTag": {
     "versionNumber": 0,
@@ -230,7 +230,9 @@
     ],
     "displayedState": {
       "partition": "NP",
-      "checks": []
+      "checks": [
+        "avg auc score"
+      ]
     }
   },
   "customFields": {}

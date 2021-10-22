@@ -36,11 +36,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634861099204
+    "lastModifiedOn": 1634861544495
   },
   "creationTag": {
     "versionNumber": 0,
@@ -68,10 +68,6 @@
     "columns": [
       {
         "name": "Trap",
-        "type": "string"
-      },
-      {
-        "name": "Date",
         "type": "string"
       },
       {

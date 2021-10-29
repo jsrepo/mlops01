@@ -27,10 +27,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "test1",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_test1",
       "objectType": "RECIPE"
     }

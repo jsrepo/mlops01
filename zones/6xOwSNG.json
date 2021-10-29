@@ -25,6 +25,10 @@
     {
       "objectId": "compute_Daily_drift_scores_historical_prepared",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "test1",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

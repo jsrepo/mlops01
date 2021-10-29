@@ -25,10 +25,6 @@
     {
       "objectId": "compute_Daily_drift_scores_historical_prepared",
       "objectType": "RECIPE"
-    },
-    {
-      "objectId": "compute_test1",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],

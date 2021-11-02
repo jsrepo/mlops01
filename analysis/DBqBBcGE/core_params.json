@@ -1,12 +1,88 @@
 {
   "inputDatasetSmartName": "past",
   "script": {
-    "steps": [],
+    "steps": [
+      {
+        "type": "ColumnSplitter",
+        "params": {
+          "inCol": "Address",
+          "separator": ", I",
+          "outColPrefix": "Address_",
+          "keepEmptyChunks": false,
+          "target": "COLUMNS",
+          "limitOutput": false,
+          "limit": 0
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false,
+        "designTimeReport": {
+          "report": {
+            "createdColumnCount": 2
+          }
+        }
+      },
+      {
+        "type": "ColumnsSelector",
+        "params": {
+          "keep": false,
+          "appliesTo": "SINGLE_COLUMN",
+          "columns": [
+            "weather_Station"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      }
+    ],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
       "mode": "ALL"
     },
-    "columnWidthsByName": {},
+    "columnWidthsByName": {
+      "Trap": 100,
+      "Date": 100,
+      "Date_parsed": 183,
+      "year": 100,
+      "Day_number": 100,
+      "Address": 300,
+      "Block": 100,
+      "Street": 162,
+      "AddressNumberAndStreet": 300,
+      "Latitude": 106,
+      "Longitude": 113,
+      "AddressAccuracy": 128,
+      "position": 204,
+      "weather_Station": 128,
+      "weather_Tmax": 105,
+      "weather_Tmin": 105,
+      "weather_Tavg": 105,
+      "weather_Depart": 120,
+      "weather_DewPoint": 135,
+      "weather_WetBulb": 128,
+      "weather_Heat": 105,
+      "weather_Cool": 105,
+      "weather_Sunrise": 128,
+      "weather_Sunset": 120,
+      "daylight_time": 141,
+      "weather_CodeSum": 128,
+      "weather_SnowFall": 135,
+      "weather_PrecipTotal": 158,
+      "weather_StnPressure": 158,
+      "weather_SeaLevel": 135,
+      "weather_ResultSpeed": 158,
+      "weather_ResultDir": 143,
+      "weather_AvgSpeed": 135,
+      "Species_concat": 300,
+      "NumMosquitos_sum": 135,
+      "WnvPresent_max": 120,
+      "count": 100,
+      "Address_0": 300,
+      "Address_1": 113
+    },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
@@ -41,7 +117,9 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
@@ -49,11 +127,11 @@
   "charts": [],
   "name": "Quick modeling of WnvPresent_max on past",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633926760317
+    "lastModifiedOn": 1635835499491
   },
   "creationTag": {
     "versionNumber": 0,

@@ -782,24 +782,6 @@
         "customProcessorWantsMatrix": false,
         "sendToInput": "main"
       },
-      "weather_Station": {
-        "generate_derivative": false,
-        "impute_constant_value": 0.0,
-        "quantile_bin_nb_bins": 4,
-        "binarize_threshold_mode": "MEDIAN",
-        "binarize_constant_threshold": 0.0,
-        "role": "REJECT",
-        "type": "NUMERIC",
-        "state": {
-          "userModified": false,
-          "autoModifiedByDSS": false,
-          "recordedMeaning": "LongMeaning"
-        },
-        "autoReason": "REJECT_ZERO_VARIANCE",
-        "customHandlingCode": "",
-        "customProcessorWantsMatrix": false,
-        "sendToInput": "main"
-      },
       "WnvPresent_max": {
         "generate_derivative": false,
         "impute_constant_value": 0.0,
@@ -877,6 +859,54 @@
           "userModified": false,
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Address_0": {
+        "text_handling": "TOKENIZE_HASHING_SVD",
+        "minRowsRatio": 0.001,
+        "maxRowsRatio": 0.8,
+        "maxWords": 0,
+        "ngramMinSize": 1,
+        "ngramMaxSize": 1,
+        "hashSize": 200000,
+        "hashSVDSVDLimit": 50000,
+        "hashSVDSVDComponents": 100,
+        "stopWordsMode": "NONE",
+        "useCustomVectorizer": false,
+        "name": "Address_0",
+        "role": "REJECT",
+        "type": "TEXT",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "FreeText"
+        },
+        "autoReason": "REJECT_DEFAULT_TEXT_HANDLING",
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Address_1": {
+        "category_handling": "DUMMIFY",
+        "missing_handling": "NONE",
+        "missing_impute_with": "MODE",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "min_samples": 10,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "nb_bins_hashing": 1048576,
+        "hash_whole_categories": true,
+        "dummy_drop": "AUTO",
+        "role": "INPUT",
+        "type": "CATEGORY",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "Text"
         },
         "customHandlingCode": "",
         "customProcessorWantsMatrix": false,

@@ -80,7 +80,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "GeoPointCreator",
@@ -109,12 +109,17 @@
     "Day_number": 100,
     "Longitude": 113,
     "Date": 100,
+    "Address_1": 141,
+    "Address_2": 113,
     "AddressNumberAndStreet": 300,
+    "Address_0": 300,
     "Block": 100,
     "Street": 162,
+    "Address_3": 100,
     "NumMosquitos": 105,
     "WnvPresent": 100,
     "position": 204,
+    "Address_4": 100,
     "Species": 169
   },
   "sorting": [],

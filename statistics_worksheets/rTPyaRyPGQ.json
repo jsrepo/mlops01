@@ -1,0 +1,174 @@
+{
+  "dataSpec": {
+    "inputDatasetSmartName": "westnile_joined_by_Trap_prepared",
+    "datasetSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "autoRefreshSample": true,
+    "refreshTrigger": 0,
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "rootCard": {
+    "type": "worksheet_root",
+    "confidenceLevel": 0.95,
+    "showConfidenceInterval": false,
+    "cards": [
+      {
+        "type": "correlation_matrix",
+        "heatmapParams": {
+          "showValues": false,
+          "showColors": true,
+          "showAbsValues": false,
+          "threshold": 0.0,
+          "filterVariablesWithoutValues": false
+        },
+        "metric": "SPEARMAN",
+        "columns": [
+          {
+            "name": "year",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Day_number",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Block",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Latitude",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Longitude",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "AddressAccuracy",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "weather_Station",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "weather_Tmax",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "weather_Tmin",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "weather_Tavg",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "weather_Depart",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "weather_DewPoint",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "weather_WetBulb",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "weather_Heat",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "weather_Cool",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "weather_Sunset",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "weather_SnowFall",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "weather_PrecipTotal",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "weather_StnPressure",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "weather_SeaLevel",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "weather_ResultSpeed",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "weather_ResultDir",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "weather_AvgSpeed",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "NumMosquitos_sum",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "WnvPresent_max",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "count",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "id": "qLxezI0"
+      }
+    ],
+    "id": "7MvvyDx"
+  },
+  "name": "Worksheet",
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1636606261408
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1636606230611
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

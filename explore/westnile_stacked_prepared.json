@@ -138,7 +138,6 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
-        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {

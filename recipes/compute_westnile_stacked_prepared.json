@@ -72,11 +72,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1636694988515
+    "lastModifiedOn": 1636522545368
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,7 +85,6 @@
     },
     "lastModifiedOn": 1633924215445
   },
-  "description": "중요한 테이터셋입니다.",
   "tags": [],
   "customFields": {},
   "checklists": {

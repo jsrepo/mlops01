@@ -275,11 +275,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 62,
+    "versionNumber": 60,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1636693619539
+    "lastModifiedOn": 1634803299476
   },
   "creationTag": {
     "versionNumber": 0,
@@ -371,14 +371,14 @@
         "createdOn": 0,
         "items": [
           {
-            "done": true,
+            "done": false,
             "text": "a. Model Owner (can be linked to active directory)",
             "createdOn": 1634090485332,
             "createdBy": "admin",
             "stateChangedOn": 0
           },
           {
-            "done": true,
+            "done": false,
             "text": "b. Model ID",
             "createdOn": 1634090526014,
             "createdBy": "admin",

@@ -48,7 +48,29 @@
   "charts": [
     {
       "copySelectionFromScript": true,
-      "engineType": "LINO",
+      "engineType": "SQL",
+      "refreshableSelection": {
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        },
+        "autoRefreshSample": false,
+        "_refreshTrigger": 1
+      },
       "def": {
         "type": "stacked_bars",
         "variant": "normal",
@@ -188,7 +210,7 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAHtJREFUaEPtmjEBwCAQxMAIyERUV3asMcFCFeRSB7mkv7S1hD318PYxVwK7wHTL1zAd9PAJTDetYQ3DFjBpmNAHR8Mahi1g0jChHi2TNmnYAiYNE+qVNmmThi1g0jChXmmTNmnYArlJtzE/mMxfHD+I0y3nvsN0s7F/AGxi+QxKhkdgCAAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAHpJREFUaEPt2sERgDAMxECohDJpjD+tMfzI0IG86eBOGvvh7Nuwt3/zHud11/MLPIpwPeybb1Fa4GADCAehLpEQRjjWAKVjQH9xEEY41gClY0ANLUpTOtYApWNATWlKUzrWAKVjQE1pSo9S2kE8iHv2D4AgUGtp3Fp6AKfGDF8wONkNAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"

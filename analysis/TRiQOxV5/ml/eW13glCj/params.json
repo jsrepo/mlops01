@@ -1,21 +1,7 @@
 {
-  "predictionType": "BINARY_CLASSIFICATION",
-  "targetVariable": "WnvPresent_max",
-  "weight": {
-    "weightMethod": "CLASS_WEIGHT"
-  },
-  "time": {
-    "enabled": false,
-    "ascending": true
-  },
-  "calibration": {
-    "calibrationMethod": "NO_CALIBRATION"
-  },
   "guessPolicy": "INTERPRETABLE",
-  "splitParams": {
-    "ttPolicy": "SPLIT_SINGLE_DATASET",
-    "ssdSplitMode": "RANDOM",
-    "splitBeforePrepare": true,
+  "partitionedModel": {
+    "enabled": false,
     "ssdSelection": {
       "useMemTable": false,
       "filter": {
@@ -28,19 +14,22 @@
         "enabled": false,
         "rules": []
       },
-      "samplingMethod": "HEAD_SEQUENTIAL",
-      "maxRecords": 100000,
+      "samplingMethod": "FULL",
+      "maxRecords": -1,
       "targetRatio": 0.02,
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1
-    },
-    "ssdTrainingRatio": 0.8,
-    "ssdSeed": 1337,
-    "testOnLargerValues": true,
-    "kfold": false,
-    "nFolds": 5,
-    "instanceIdRefresher": 0,
-    "subSamplingSeed": 1337
+    }
+  },
+  "weight": {
+    "weightMethod": "CLASS_WEIGHT"
+  },
+  "time": {
+    "enabled": false,
+    "ascending": true
+  },
+  "calibration": {
+    "calibrationMethod": "NO_CALIBRATION"
   },
   "preprocessing": {
     "feature_selection_params": {
@@ -73,6 +62,8 @@
         "code": "# type your code here"
       }
     },
+    "preprocessingFitSampleRatio": 1.0,
+    "preprocessingFitSampleSeed": 1337,
     "target_remapping": [
       {
         "sourceValue": "0",
@@ -85,8 +76,6 @@
         "sampleFreq": 385
       }
     ],
-    "preprocessingFitSampleRatio": 1.0,
-    "preprocessingFitSampleSeed": 1337,
     "per_feature": {
       "weather_SeaLevel": {
         "generate_derivative": false,
@@ -94,10 +83,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "REJECT",
         "type": "NUMERIC",
         "state": {
@@ -115,10 +106,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "INPUT",
         "type": "NUMERIC",
         "state": {
@@ -161,10 +154,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "REJECT",
         "type": "NUMERIC",
         "state": {
@@ -182,10 +177,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "REJECT",
         "type": "NUMERIC",
         "state": {
@@ -203,10 +200,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "REJECT",
         "type": "NUMERIC",
         "state": {
@@ -224,10 +223,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "INPUT",
         "type": "NUMERIC",
         "state": {
@@ -245,10 +246,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "REJECT",
         "type": "NUMERIC",
         "state": {
@@ -266,10 +269,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "REJECT",
         "type": "NUMERIC",
         "state": {
@@ -287,10 +292,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "REJECT",
         "type": "NUMERIC",
         "state": {
@@ -308,10 +315,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "REJECT",
         "type": "NUMERIC",
         "state": {
@@ -360,6 +369,18 @@
         "nb_bins_hashing": 1048576,
         "hash_whole_categories": true,
         "dummy_drop": "NONE",
+        "impact_method": "M_ESTIMATOR",
+        "impact_m": 10,
+        "impact_kfold": true,
+        "impact_kfold_k": 5,
+        "impact_kfold_seed": 1337,
+        "ordinal_order": "COUNT",
+        "ordinal_ascending": false,
+        "ordinal_default_mode": "HIGHEST",
+        "ordinal_default_value": 0,
+        "frequency_default_mode": "EXPLICIT",
+        "frequency_default_value": 0.0,
+        "frequency_normalized": true,
         "role": "REJECT",
         "type": "CATEGORY",
         "state": {
@@ -384,6 +405,18 @@
         "nb_bins_hashing": 1048576,
         "hash_whole_categories": true,
         "dummy_drop": "AUTO",
+        "impact_method": "M_ESTIMATOR",
+        "impact_m": 10,
+        "impact_kfold": true,
+        "impact_kfold_k": 5,
+        "impact_kfold_seed": 1337,
+        "ordinal_order": "COUNT",
+        "ordinal_ascending": false,
+        "ordinal_default_mode": "HIGHEST",
+        "ordinal_default_value": 0,
+        "frequency_default_mode": "EXPLICIT",
+        "frequency_default_value": 0.0,
+        "frequency_normalized": true,
         "role": "REJECT",
         "type": "CATEGORY",
         "state": {
@@ -401,10 +434,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "REJECT",
         "type": "NUMERIC",
         "state": {
@@ -422,10 +457,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "REJECT",
         "type": "NUMERIC",
         "state": {
@@ -443,10 +480,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "INPUT",
         "type": "NUMERIC",
         "state": {
@@ -464,10 +503,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "REJECT",
         "type": "NUMERIC",
         "state": {
@@ -485,10 +526,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "REJECT",
         "type": "NUMERIC",
         "state": {
@@ -506,10 +549,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "REJECT",
         "type": "NUMERIC",
         "state": {
@@ -527,10 +572,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "REJECT",
         "type": "NUMERIC",
         "state": {
@@ -548,10 +595,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "REJECT",
         "type": "NUMERIC",
         "state": {
@@ -575,6 +624,18 @@
         "nb_bins_hashing": 1048576,
         "hash_whole_categories": true,
         "dummy_drop": "NONE",
+        "impact_method": "M_ESTIMATOR",
+        "impact_m": 10,
+        "impact_kfold": true,
+        "impact_kfold_k": 5,
+        "impact_kfold_seed": 1337,
+        "ordinal_order": "COUNT",
+        "ordinal_ascending": false,
+        "ordinal_default_mode": "HIGHEST",
+        "ordinal_default_value": 0,
+        "frequency_default_mode": "EXPLICIT",
+        "frequency_default_value": 0.0,
+        "frequency_normalized": true,
         "role": "REJECT",
         "type": "CATEGORY",
         "state": {
@@ -593,10 +654,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "REJECT",
         "type": "NUMERIC",
         "state": {
@@ -614,10 +677,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "INPUT",
         "type": "NUMERIC",
         "state": {
@@ -635,10 +700,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "INPUT",
         "type": "NUMERIC",
         "state": {
@@ -662,6 +729,18 @@
         "nb_bins_hashing": 1048576,
         "hash_whole_categories": true,
         "dummy_drop": "NONE",
+        "impact_method": "M_ESTIMATOR",
+        "impact_m": 10,
+        "impact_kfold": true,
+        "impact_kfold_k": 5,
+        "impact_kfold_seed": 1337,
+        "ordinal_order": "COUNT",
+        "ordinal_ascending": false,
+        "ordinal_default_mode": "HIGHEST",
+        "ordinal_default_value": 0,
+        "frequency_default_mode": "EXPLICIT",
+        "frequency_default_value": 0.0,
+        "frequency_normalized": true,
         "role": "REJECT",
         "type": "CATEGORY",
         "state": {
@@ -711,6 +790,18 @@
         "nb_bins_hashing": 1048576,
         "hash_whole_categories": true,
         "dummy_drop": "NONE",
+        "impact_method": "M_ESTIMATOR",
+        "impact_m": 10,
+        "impact_kfold": true,
+        "impact_kfold_k": 5,
+        "impact_kfold_seed": 1337,
+        "ordinal_order": "COUNT",
+        "ordinal_ascending": false,
+        "ordinal_default_mode": "HIGHEST",
+        "ordinal_default_value": 0,
+        "frequency_default_mode": "EXPLICIT",
+        "frequency_default_value": 0.0,
+        "frequency_normalized": true,
         "role": "REJECT",
         "type": "CATEGORY",
         "state": {
@@ -729,10 +820,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "REJECT",
         "type": "NUMERIC",
         "state": {
@@ -750,10 +843,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "REJECT",
         "type": "NUMERIC",
         "state": {
@@ -771,10 +866,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "REJECT",
         "type": "NUMERIC",
         "state": {
@@ -789,9 +886,11 @@
       "weather_Station": {
         "generate_derivative": false,
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "REJECT",
         "type": "NUMERIC",
         "state": {
@@ -807,9 +906,11 @@
       "WnvPresent_max": {
         "generate_derivative": false,
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "TARGET",
         "type": "NUMERIC",
         "state": {
@@ -833,6 +934,18 @@
         "nb_bins_hashing": 1048576,
         "hash_whole_categories": true,
         "dummy_drop": "NONE",
+        "impact_method": "M_ESTIMATOR",
+        "impact_m": 10,
+        "impact_kfold": true,
+        "impact_kfold_k": 5,
+        "impact_kfold_seed": 1337,
+        "ordinal_order": "COUNT",
+        "ordinal_ascending": false,
+        "ordinal_default_mode": "HIGHEST",
+        "ordinal_default_value": 0,
+        "frequency_default_mode": "EXPLICIT",
+        "frequency_default_value": 0.0,
+        "frequency_normalized": true,
         "role": "REJECT",
         "type": "CATEGORY",
         "state": {
@@ -851,10 +964,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "REJECT",
         "type": "NUMERIC",
         "state": {
@@ -872,10 +987,12 @@
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "keep_regular": false,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
+        "datetime_cyclical_periods": [],
         "role": "REJECT",
         "type": "NUMERIC",
         "state": {
@@ -1007,7 +1124,9 @@
           "min": 1
         },
         "values": [
-          100
+          100,
+          1000,
+          10000
         ],
         "range": {
           "min": 80,
@@ -1903,6 +2022,350 @@
       "K": 100,
       "enabled": false
     },
+    "lightgbm_regression": {
+      "boosting_type": {
+        "values": {
+          "gbdt": {
+            "enabled": true
+          },
+          "goss": {
+            "enabled": false
+          }
+        }
+      },
+      "num_leaves": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          31
+        ],
+        "range": {
+          "min": 20,
+          "max": 500,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "learning_rate": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "values": [
+          0.1,
+          0.2
+        ],
+        "range": {
+          "min": 0.1,
+          "max": 0.6,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "n_estimators": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          75
+        ],
+        "range": {
+          "min": 50,
+          "max": 200,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "min_split_gain": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "values": [
+          0.0
+        ],
+        "range": {
+          "min": 0.0,
+          "max": 1.0,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "min_child_weight": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "values": [
+          0.001
+        ],
+        "range": {
+          "min": 0.001,
+          "max": 1.0,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "min_child_samples": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          10,
+          30
+        ],
+        "range": {
+          "min": 1,
+          "max": 100,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "colsample_bytree": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "values": [
+          0.7,
+          0.9
+        ],
+        "range": {
+          "min": 0.5,
+          "max": 1.0,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "reg_alpha": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 0.0
+        },
+        "values": [
+          0.0
+        ],
+        "range": {
+          "min": 0.0,
+          "max": 1.0,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "reg_lambda": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 0.0
+        },
+        "values": [
+          0.0
+        ],
+        "range": {
+          "min": 0.0,
+          "max": 1.0,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "early_stopping": true,
+      "early_stopping_rounds": 4,
+      "random_state": 1337,
+      "n_jobs": 4,
+      "max_depth": -1,
+      "subsample": 0.9,
+      "subsample_freq": 1,
+      "use_bagging": false,
+      "enabled": false
+    },
+    "lightgbm_classification": {
+      "boosting_type": {
+        "values": {
+          "gbdt": {
+            "enabled": true
+          },
+          "goss": {
+            "enabled": false
+          }
+        }
+      },
+      "num_leaves": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          31
+        ],
+        "range": {
+          "min": 20,
+          "max": 500,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "learning_rate": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "values": [
+          0.1,
+          0.2
+        ],
+        "range": {
+          "min": 0.1,
+          "max": 0.6,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "n_estimators": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          75
+        ],
+        "range": {
+          "min": 50,
+          "max": 200,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "min_split_gain": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "values": [
+          0.0
+        ],
+        "range": {
+          "min": 0.0,
+          "max": 1.0,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "min_child_weight": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "values": [
+          0.001
+        ],
+        "range": {
+          "min": 0.001,
+          "max": 1.0,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "min_child_samples": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          10,
+          30
+        ],
+        "range": {
+          "min": 1,
+          "max": 100,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "colsample_bytree": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "values": [
+          0.7,
+          0.9
+        ],
+        "range": {
+          "min": 0.5,
+          "max": 1.0,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "reg_alpha": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 0.0
+        },
+        "values": [
+          0.0
+        ],
+        "range": {
+          "min": 0.0,
+          "max": 1.0,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "reg_lambda": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 0.0
+        },
+        "values": [
+          0.0
+        ],
+        "range": {
+          "min": 0.0,
+          "max": 1.0,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "early_stopping": true,
+      "early_stopping_rounds": 4,
+      "random_state": 1337,
+      "n_jobs": 4,
+      "max_depth": -1,
+      "subsample": 0.9,
+      "subsample_freq": 1,
+      "use_bagging": false,
+      "enabled": false
+    },
     "xgboost": {
       "max_depth": {
         "gridMode": "EXPLICIT",
@@ -2111,7 +2574,7 @@
       "seed": 1337,
       "enable_early_stopping": true,
       "early_stopping_rounds": 4,
-      "enabled": true
+      "enabled": false
     },
     "deep_learning_sparkling": {
       "enabled": false,
@@ -2515,16 +2978,16 @@
       "trainOnAllData": true,
       "stepsPerEpoch": 100,
       "shuffleData": true,
-      "useGPU": false,
-      "gpuList": [
-        0
-      ],
       "perGPUMemoryFraction": 0.5,
       "gpuAllowGrowth": false,
       "advancedFitMode": false,
       "enabled": false,
       "kerasInputs": [
         "main"
+      ],
+      "useGPU": false,
+      "gpuList": [
+        0
       ]
     },
     "grid_search": true,
@@ -2564,6 +3027,38 @@
   },
   "assertionsParams": {
     "assertions": []
+  },
+  "predictionType": "BINARY_CLASSIFICATION",
+  "targetVariable": "WnvPresent_max",
+  "splitParams": {
+    "ttPolicy": "SPLIT_SINGLE_DATASET",
+    "ssdSplitMode": "RANDOM",
+    "splitBeforePrepare": true,
+    "ssdSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "ssdTrainingRatio": 0.8,
+    "ssdSeed": 1337,
+    "testOnLargerValues": true,
+    "kfold": false,
+    "nFolds": 5,
+    "instanceIdRefresher": 0,
+    "subSamplingSeed": 1337
   },
   "id": "eW13glCj",
   "initiator": "jiseong.admin",
@@ -2661,6 +3156,24 @@
       "_refreshTrigger": 0
     },
     "vizSampling": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
@@ -2670,26 +3183,5 @@
     "previewMode": "ALL_ROWS"
   },
   "predictionDisplayCharts": [],
-  "partitionedModel": {
-    "enabled": false,
-    "ssdSelection": {
-      "useMemTable": false,
-      "filter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "partitionSelectionMethod": "ALL",
-      "latestPartitionsN": 1,
-      "ordering": {
-        "enabled": false,
-        "rules": []
-      },
-      "samplingMethod": "FULL",
-      "maxRecords": -1,
-      "targetRatio": 0.02,
-      "withinFirstN": -1,
-      "maxReadUncompressedBytes": -1
-    }
-  },
   "labels": []
 }

@@ -1,9 +1,10 @@
 {
+  "savedModelType": "DSS_MANAGED",
   "publishPolicy": "UNCONDITIONAL",
   "rebuildBehavior": "EXPLICIT",
   "name": "Prediction (RANDOM_FOREST_CLASSIFICATION) on past",
   "contentType": "prediction/py_memory",
-  "activeVersion": "1633951543015",
+  "activeVersion": "initial",
   "conditionalOutputs": [],
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -104,8 +105,28 @@
     }
   },
   "miniTask": {
-    "predictionType": "BINARY_CLASSIFICATION",
-    "targetVariable": "WnvPresent_max",
+    "guessPolicy": "DEFAULT",
+    "partitionedModel": {
+      "enabled": false,
+      "ssdSelection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      }
+    },
     "weight": {},
     "time": {
       "enabled": false,
@@ -114,7 +135,6 @@
     "calibration": {
       "calibrationMethod": "NO_CALIBRATION"
     },
-    "guessPolicy": "DEFAULT",
     "modeling": {
       "skipExpensiveReports": false,
       "random_forest_regression": {
@@ -1107,6 +1127,350 @@
         "K": 100,
         "enabled": false
       },
+      "lightgbm_regression": {
+        "boosting_type": {
+          "values": {
+            "gbdt": {
+              "enabled": true
+            },
+            "goss": {
+              "enabled": false
+            }
+          }
+        },
+        "num_leaves": {
+          "gridMode": "EXPLICIT",
+          "randomMode": "RANGE",
+          "limit": {
+            "min": 1
+          },
+          "values": [
+            31
+          ],
+          "range": {
+            "min": 20,
+            "max": 500,
+            "nbValues": 3,
+            "scaling": "LINEAR"
+          }
+        },
+        "learning_rate": {
+          "gridMode": "EXPLICIT",
+          "randomMode": "RANGE",
+          "limit": {
+            "min": 1.0E-23,
+            "max": 1.0
+          },
+          "values": [
+            0.1,
+            0.2
+          ],
+          "range": {
+            "min": 0.1,
+            "max": 0.6,
+            "nbValues": 3,
+            "scaling": "LINEAR"
+          }
+        },
+        "n_estimators": {
+          "gridMode": "EXPLICIT",
+          "randomMode": "RANGE",
+          "limit": {
+            "min": 1
+          },
+          "values": [
+            75
+          ],
+          "range": {
+            "min": 50,
+            "max": 200,
+            "nbValues": 3,
+            "scaling": "LINEAR"
+          }
+        },
+        "min_split_gain": {
+          "gridMode": "EXPLICIT",
+          "randomMode": "RANGE",
+          "limit": {
+            "min": 0.0,
+            "max": 1.0
+          },
+          "values": [
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 1.0,
+            "nbValues": 3,
+            "scaling": "LINEAR"
+          }
+        },
+        "min_child_weight": {
+          "gridMode": "EXPLICIT",
+          "randomMode": "RANGE",
+          "limit": {
+            "min": 1.0E-23,
+            "max": 1.0
+          },
+          "values": [
+            0.001
+          ],
+          "range": {
+            "min": 0.001,
+            "max": 1.0,
+            "nbValues": 3,
+            "scaling": "LINEAR"
+          }
+        },
+        "min_child_samples": {
+          "gridMode": "EXPLICIT",
+          "randomMode": "RANGE",
+          "limit": {
+            "min": 1
+          },
+          "values": [
+            10,
+            30
+          ],
+          "range": {
+            "min": 1,
+            "max": 100,
+            "nbValues": 3,
+            "scaling": "LINEAR"
+          }
+        },
+        "colsample_bytree": {
+          "gridMode": "EXPLICIT",
+          "randomMode": "RANGE",
+          "limit": {
+            "min": 1.0E-23,
+            "max": 1.0
+          },
+          "values": [
+            0.7,
+            0.9
+          ],
+          "range": {
+            "min": 0.5,
+            "max": 1.0,
+            "nbValues": 3,
+            "scaling": "LINEAR"
+          }
+        },
+        "reg_alpha": {
+          "gridMode": "EXPLICIT",
+          "randomMode": "RANGE",
+          "limit": {
+            "min": 0.0
+          },
+          "values": [
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 1.0,
+            "nbValues": 3,
+            "scaling": "LINEAR"
+          }
+        },
+        "reg_lambda": {
+          "gridMode": "EXPLICIT",
+          "randomMode": "RANGE",
+          "limit": {
+            "min": 0.0
+          },
+          "values": [
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 1.0,
+            "nbValues": 3,
+            "scaling": "LINEAR"
+          }
+        },
+        "early_stopping": true,
+        "early_stopping_rounds": 4,
+        "random_state": 1337,
+        "n_jobs": 4,
+        "max_depth": -1,
+        "subsample": 0.9,
+        "subsample_freq": 1,
+        "use_bagging": false,
+        "enabled": false
+      },
+      "lightgbm_classification": {
+        "boosting_type": {
+          "values": {
+            "gbdt": {
+              "enabled": true
+            },
+            "goss": {
+              "enabled": false
+            }
+          }
+        },
+        "num_leaves": {
+          "gridMode": "EXPLICIT",
+          "randomMode": "RANGE",
+          "limit": {
+            "min": 1
+          },
+          "values": [
+            31
+          ],
+          "range": {
+            "min": 20,
+            "max": 500,
+            "nbValues": 3,
+            "scaling": "LINEAR"
+          }
+        },
+        "learning_rate": {
+          "gridMode": "EXPLICIT",
+          "randomMode": "RANGE",
+          "limit": {
+            "min": 1.0E-23,
+            "max": 1.0
+          },
+          "values": [
+            0.1,
+            0.2
+          ],
+          "range": {
+            "min": 0.1,
+            "max": 0.6,
+            "nbValues": 3,
+            "scaling": "LINEAR"
+          }
+        },
+        "n_estimators": {
+          "gridMode": "EXPLICIT",
+          "randomMode": "RANGE",
+          "limit": {
+            "min": 1
+          },
+          "values": [
+            75
+          ],
+          "range": {
+            "min": 50,
+            "max": 200,
+            "nbValues": 3,
+            "scaling": "LINEAR"
+          }
+        },
+        "min_split_gain": {
+          "gridMode": "EXPLICIT",
+          "randomMode": "RANGE",
+          "limit": {
+            "min": 0.0,
+            "max": 1.0
+          },
+          "values": [
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 1.0,
+            "nbValues": 3,
+            "scaling": "LINEAR"
+          }
+        },
+        "min_child_weight": {
+          "gridMode": "EXPLICIT",
+          "randomMode": "RANGE",
+          "limit": {
+            "min": 1.0E-23,
+            "max": 1.0
+          },
+          "values": [
+            0.001
+          ],
+          "range": {
+            "min": 0.001,
+            "max": 1.0,
+            "nbValues": 3,
+            "scaling": "LINEAR"
+          }
+        },
+        "min_child_samples": {
+          "gridMode": "EXPLICIT",
+          "randomMode": "RANGE",
+          "limit": {
+            "min": 1
+          },
+          "values": [
+            10,
+            30
+          ],
+          "range": {
+            "min": 1,
+            "max": 100,
+            "nbValues": 3,
+            "scaling": "LINEAR"
+          }
+        },
+        "colsample_bytree": {
+          "gridMode": "EXPLICIT",
+          "randomMode": "RANGE",
+          "limit": {
+            "min": 1.0E-23,
+            "max": 1.0
+          },
+          "values": [
+            0.7,
+            0.9
+          ],
+          "range": {
+            "min": 0.5,
+            "max": 1.0,
+            "nbValues": 3,
+            "scaling": "LINEAR"
+          }
+        },
+        "reg_alpha": {
+          "gridMode": "EXPLICIT",
+          "randomMode": "RANGE",
+          "limit": {
+            "min": 0.0
+          },
+          "values": [
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 1.0,
+            "nbValues": 3,
+            "scaling": "LINEAR"
+          }
+        },
+        "reg_lambda": {
+          "gridMode": "EXPLICIT",
+          "randomMode": "RANGE",
+          "limit": {
+            "min": 0.0
+          },
+          "values": [
+            0.0
+          ],
+          "range": {
+            "min": 0.0,
+            "max": 1.0,
+            "nbValues": 3,
+            "scaling": "LINEAR"
+          }
+        },
+        "early_stopping": true,
+        "early_stopping_rounds": 4,
+        "random_state": 1337,
+        "n_jobs": 4,
+        "max_depth": -1,
+        "subsample": 0.9,
+        "subsample_freq": 1,
+        "use_bagging": false,
+        "enabled": false
+      },
       "xgboost": {
         "max_depth": {
           "gridMode": "EXPLICIT",
@@ -1641,16 +2005,16 @@
         "trainOnAllData": true,
         "stepsPerEpoch": 100,
         "shuffleData": true,
-        "useGPU": false,
-        "gpuList": [
-          0
-        ],
         "perGPUMemoryFraction": 0.5,
         "gpuAllowGrowth": false,
         "advancedFitMode": false,
         "enabled": false,
         "kerasInputs": [
           "main"
+        ],
+        "useGPU": false,
+        "gpuList": [
+          0
         ]
       },
       "grid_search": false,
@@ -1691,6 +2055,8 @@
     "assertionsParams": {
       "assertions": []
     },
+    "predictionType": "BINARY_CLASSIFICATION",
+    "targetVariable": "WnvPresent_max",
     "diagnosticsSettings": {
       "enabled": true,
       "settings": [
@@ -1784,6 +2150,24 @@
         "_refreshTrigger": 0
       },
       "vizSampling": {
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        },
         "autoRefreshSample": false,
         "_refreshTrigger": 0
       },
@@ -1793,35 +2177,16 @@
       "previewMode": "ALL_ROWS"
     },
     "predictionDisplayCharts": [],
-    "partitionedModel": {
-      "enabled": false,
-      "ssdSelection": {
-        "useMemTable": false,
-        "filter": {
-          "distinct": false,
-          "enabled": false
-        },
-        "partitionSelectionMethod": "ALL",
-        "latestPartitionsN": 1,
-        "ordering": {
-          "enabled": false,
-          "rules": []
-        },
-        "samplingMethod": "FULL",
-        "maxRecords": -1,
-        "targetRatio": 0.02,
-        "withinFirstN": -1,
-        "maxReadUncompressedBytes": -1
-      }
-    },
     "labels": []
   },
+  "lastTrainIndex": 1,
+  "lastTrainJobId": "",
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
-      "login": "admin"
+      "login": "nanae"
     },
-    "lastModifiedOn": 1634089550001
+    "lastModifiedOn": 1638779860036
   },
   "creationTag": {
     "versionNumber": 0,

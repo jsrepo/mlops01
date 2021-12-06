@@ -80,7 +80,6 @@
       "ROC_AUC",
       "CALIBRATION_LOSS",
       "CUMULATIVE_LIFT",
-      "CUSTOM",
       "DATA_DRIFT"
     ],
     "predictionType": "BINARY_CLASSIFICATION",
@@ -91,17 +90,23 @@
       "evaluationDataset:dataset-name"
     ],
     "alsoDisplayedLabels": [],
+    "barLabels": [
+      "evaluation:date",
+      "model:name",
+      "evaluationDataset:dataset-name"
+    ],
+    "graphStyle": "BAR",
     "sortColumn": "refStr",
     "sortDescending": false,
     "showConfidenceIntervals": true,
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "nanae"
     },
-    "lastModifiedOn": 1638779802544
+    "lastModifiedOn": 1638780142637
   },
   "creationTag": {
     "versionNumber": 0,

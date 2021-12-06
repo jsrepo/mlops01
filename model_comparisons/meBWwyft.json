@@ -19,6 +19,30 @@
       "isSelected": true,
       "color": "#2ca02c",
       "isChampion": false
+    },
+    {
+      "smartId": "A-*-DBqBBcGE-oUk2uzrV-s5-pp1-m1",
+      "isSelected": true,
+      "color": "#d62728",
+      "isChampion": false
+    },
+    {
+      "smartId": "A-*-DBqBBcGE-oUk2uzrV-s5-pp2-m1",
+      "isSelected": true,
+      "color": "#9467bd",
+      "isChampion": false
+    },
+    {
+      "smartId": "A-*-DBqBBcGE-oUk2uzrV-s4-pp1-m1",
+      "isSelected": true,
+      "color": "#8c564b",
+      "isChampion": false
+    },
+    {
+      "smartId": "A-*-DBqBBcGE-oUk2uzrV-s4-pp2-m1",
+      "isSelected": true,
+      "color": "#e377c2",
+      "isChampion": false
     }
   ],
   "displayParams": {
@@ -52,11 +76,11 @@
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "nanae"
     },
-    "lastModifiedOn": 1638784285644
+    "lastModifiedOn": 1638784373365
   },
   "creationTag": {
     "versionNumber": 0,

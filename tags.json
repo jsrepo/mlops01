@@ -5,6 +5,7 @@
     "Data:source": {},
     "Data:temp": {},
     "Data:output": {},
-    "recipe-editor": {}
+    "recipe-editor": {},
+    "Data Drift": {}
   }
 }

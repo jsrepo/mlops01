@@ -70,19 +70,38 @@
     "dimensions": []
   },
   "displayParams": {
+    "displayedMetrics": [
+      "ACCURACY",
+      "PRECISION",
+      "RECALL",
+      "F1",
+      "COST_MATRIX",
+      "LOG_LOSS",
+      "ROC_AUC",
+      "CALIBRATION_LOSS",
+      "CUMULATIVE_LIFT",
+      "CUSTOM",
+      "DATA_DRIFT"
+    ],
+    "predictionType": "BINARY_CLASSIFICATION",
     "pinnedMetrics": [],
-    "yLabels": [],
+    "xLabel": "evaluation:date",
+    "yLabels": [
+      "model:name",
+      "evaluationDataset:dataset-name"
+    ],
     "alsoDisplayedLabels": [],
+    "sortColumn": "refStr",
     "sortDescending": false,
     "showConfidenceIntervals": true,
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "nanae"
     },
-    "lastModifiedOn": 1638779743222
+    "lastModifiedOn": 1638779802544
   },
   "creationTag": {
     "versionNumber": 0,

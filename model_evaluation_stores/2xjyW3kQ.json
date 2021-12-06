@@ -53,7 +53,25 @@
   },
   "metricsChecks": {
     "runOnBuild": false,
-    "checks": [],
+    "checks": [
+      {
+        "metricId": "model_perf:ACCURACY",
+        "minimum": 0.8,
+        "maximum": 0.0,
+        "softMinimum": 0.0,
+        "softMaximum": 0.0,
+        "minimumEnabled": true,
+        "maximumEnabled": false,
+        "softMinimumEnabled": false,
+        "softMaximumEnabled": false,
+        "type": "numericRange",
+        "meta": {
+          "name": "Value in range",
+          "label": "Accuracy\u003e\u003d0.8"
+        },
+        "computeOnBuildMode": "PARTITION"
+      }
+    ],
     "displayedState": {
       "partition": "NP",
       "checks": []
@@ -102,11 +120,11 @@
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "nanae"
     },
-    "lastModifiedOn": 1638780142637
+    "lastModifiedOn": 1638780244944
   },
   "creationTag": {
     "versionNumber": 0,

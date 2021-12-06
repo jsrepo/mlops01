@@ -74,7 +74,9 @@
     ],
     "displayedState": {
       "partition": "NP",
-      "checks": []
+      "checks": [
+        "Value in range of Accuracy"
+      ]
     }
   },
   "flowOptions": {
@@ -120,11 +122,11 @@
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "nanae"
     },
-    "lastModifiedOn": 1638780245034
+    "lastModifiedOn": 1638780257818
   },
   "creationTag": {
     "versionNumber": 0,

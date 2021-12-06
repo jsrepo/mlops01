@@ -47,7 +47,10 @@
       "partition": "NP",
       "columns": [],
       "metrics": [
-        "reporting:BUILD_DURATION"
+        "reporting:BUILD_DURATION",
+        "model_perf:ACCURACY",
+        "model_perf:F1",
+        "reporting:BUILD_START_DATE"
       ]
     }
   },
@@ -122,11 +125,11 @@
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "nanae"
     },
-    "lastModifiedOn": 1638780257818
+    "lastModifiedOn": 1638780313174
   },
   "creationTag": {
     "versionNumber": 0,

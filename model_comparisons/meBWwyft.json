@@ -62,7 +62,10 @@
       "ROC_AUC"
     ],
     "xLabel": "model:date",
-    "yLabels": [],
+    "yLabels": [
+      "model:name",
+      "evaluationDataset:dataset-name"
+    ],
     "alsoDisplayedLabels": [],
     "barLabels": [
       "evaluation:date",
@@ -76,11 +79,11 @@
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "nanae"
     },
-    "lastModifiedOn": 1638784373365
+    "lastModifiedOn": 1638784507388
   },
   "creationTag": {
     "versionNumber": 0,

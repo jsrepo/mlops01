@@ -1,21 +1,57 @@
 {
   "displayName": "Compare 2 evaluations",
   "predictionType": "BINARY_CLASSIFICATION",
-  "comparedModels": [],
+  "comparedModels": [
+    {
+      "smartId": "ME-*-2xjyW3kQ-ODjhzN54rQbU",
+      "isSelected": true,
+      "color": "#1f77b4",
+      "isChampion": false
+    },
+    {
+      "smartId": "ME-*-2xjyW3kQ-8ZVbPdJbw6Gw",
+      "isSelected": true,
+      "color": "#ff7f0e",
+      "isChampion": false
+    }
+  ],
   "displayParams": {
-    "pinnedMetrics": [],
+    "displayedMetrics": [
+      "ACCURACY",
+      "PRECISION",
+      "RECALL",
+      "F1",
+      "COST_MATRIX",
+      "LOG_LOSS",
+      "ROC_AUC",
+      "CALIBRATION_LOSS",
+      "CUMULATIVE_LIFT",
+      "DATA_DRIFT"
+    ],
+    "predictionType": "BINARY_CLASSIFICATION",
+    "pinnedMetrics": [
+      "ROC_AUC"
+    ],
+    "xLabel": "model:date",
     "yLabels": [],
     "alsoDisplayedLabels": [],
+    "barLabels": [
+      "evaluation:date",
+      "model:name",
+      "evaluationDataset:dataset-name"
+    ],
+    "graphStyle": "BAR",
+    "sortColumn": "",
     "sortDescending": false,
     "showConfidenceIntervals": true,
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "nanae"
     },
-    "lastModifiedOn": 1638784493948
+    "lastModifiedOn": 1638784500944
   },
   "creationTag": {
     "versionNumber": 0,

@@ -2179,14 +2179,14 @@
     "predictionDisplayCharts": [],
     "labels": []
   },
-  "lastTrainIndex": 1,
-  "lastTrainJobId": "",
+  "lastTrainIndex": 2,
+  "lastTrainJobId": "Build_Prediction__RANDOM_FOREST_CLASSIFICATION__on_past_2021-12-06T08-40-07.251",
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "nanae"
     },
-    "lastModifiedOn": 1638780017240
+    "lastModifiedOn": 1638780017262
   },
   "creationTag": {
     "versionNumber": 0,

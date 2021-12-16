@@ -1,0 +1,32 @@
+{
+  "displayName": "Compare 2 evaluations",
+  "predictionType": "BINARY_CLASSIFICATION",
+  "comparedModels": [],
+  "displayParams": {
+    "pinnedMetrics": [],
+    "yLabels": [],
+    "alsoDisplayedLabels": [],
+    "sortDescending": false,
+    "showConfidenceIntervals": true,
+    "disabledMERunIds": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "nanae"
+    },
+    "lastModifiedOn": 1639633518669
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "nanae"
+    },
+    "lastModifiedOn": 1639633518669
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

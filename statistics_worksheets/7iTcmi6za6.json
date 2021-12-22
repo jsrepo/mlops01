@@ -22,7 +22,8 @@
     "autoRefreshSample": true,
     "refreshTrigger": 0,
     "containerSelection": {
-      "containerMode": "INHERIT"
+      "containerMode": "NONE",
+      "containerConf": "apac-eks-small"
     }
   },
   "rootCard": {
@@ -225,11 +226,11 @@
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1640132659780
+    "lastModifiedOn": 1640134231275
   },
   "creationTag": {
     "versionNumber": 0,

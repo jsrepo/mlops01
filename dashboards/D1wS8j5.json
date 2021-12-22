@@ -54,10 +54,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 0,
-              "left": 10,
-              "width": 2,
-              "height": 2
+              "top": 3,
+              "left": 0,
+              "width": 4,
+              "height": 4
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -494,11 +494,11 @@
   "name": "OC-BETA-Model Documentation\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1640164506965
+    "lastModifiedOn": 1640164518358
   },
   "creationTag": {
     "versionNumber": 0,

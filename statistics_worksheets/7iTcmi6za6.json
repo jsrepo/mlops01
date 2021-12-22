@@ -1,0 +1,246 @@
+{
+  "dataSpec": {
+    "inputDatasetSmartName": "westnile_stacked",
+    "datasetSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "autoRefreshSample": true,
+    "refreshTrigger": 0,
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "rootCard": {
+    "type": "worksheet_root",
+    "confidenceLevel": 0.95,
+    "showConfidenceInterval": false,
+    "cards": [
+      {
+        "type": "univariate_header",
+        "showHistogram": true,
+        "showQuantile": true,
+        "showFrequencyTable": true,
+        "showSummary": true,
+        "showBoxPlot": true,
+        "showCumulativeDistributionFunction": false,
+        "xColumns": [
+          {
+            "name": "AddressAccuracy",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "WnvPresent",
+            "type": "CATEGORICAL"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "AddressAccuracy",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "AddressAccuracy",
+                  "type": "CATEGORICAL"
+                },
+                "id": "f52X2PF"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "AddressAccuracy",
+                  "type": "CATEGORICAL"
+                },
+                "id": "i9cZnpo"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "AddressAccuracy",
+                  "type": "CATEGORICAL"
+                },
+                "id": "6X4nSTv"
+              }
+            ],
+            "id": "8U9kTiz"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "WnvPresent",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "WnvPresent",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Cx20K3q"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "WnvPresent",
+                  "type": "CATEGORICAL"
+                },
+                "id": "xJPnDXo"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "WnvPresent",
+                  "type": "CATEGORICAL"
+                },
+                "id": "5fVOcoU"
+              }
+            ],
+            "id": "Wfxo0eH"
+          }
+        ],
+        "id": "H7SCBjk"
+      },
+      {
+        "type": "bivariate_summary",
+        "confidenceLevel": 0.95,
+        "showConfidenceInterval": false,
+        "compute": {
+          "spearman": true,
+          "pearson": true,
+          "totalCount": true,
+          "covariance": true,
+          "kendallTau": true,
+          "mutualInformation": true,
+          "completeCount": true
+        },
+        "xColumn": {
+          "name": "AddressAccuracy",
+          "type": "CATEGORICAL"
+        },
+        "yColumn": {
+          "name": "WnvPresent",
+          "type": "CATEGORICAL"
+        },
+        "id": "IyA7VSE"
+      },
+      {
+        "type": "pca",
+        "heatmapParams": {
+          "showValues": true,
+          "showColors": true,
+          "showAbsValues": false,
+          "threshold": 0.0,
+          "filterVariablesWithoutValues": false
+        },
+        "columns": [
+          {
+            "name": "AddressAccuracy",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "WnvPresent",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "id": "LxDsySH"
+      }
+    ],
+    "id": "ZY7yQBo"
+  },
+  "name": "Worksheet",
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1640132659780
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1640132636534
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

@@ -1,7 +1,16 @@
 {
   "name": "Team C Project",
   "color": "#087ABF",
-  "items": [],
+  "items": [
+    {
+      "objectId": "team_c_data_prep",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_team_c_data_prep",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},

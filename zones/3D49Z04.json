@@ -25,6 +25,10 @@
     {
       "objectId": "2xjyW3kQ",
       "objectType": "MODEL_EVALUATION_STORE"
+    },
+    {
+      "objectId": "o7tccoUO",
+      "objectType": "MANAGED_FOLDER"
     }
   ],
   "shared": [],

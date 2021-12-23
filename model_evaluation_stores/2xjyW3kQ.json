@@ -118,18 +118,18 @@
       "model:name",
       "evaluationDataset:dataset-name"
     ],
-    "graphStyle": "LINE",
+    "graphStyle": "BAR",
     "sortColumn": "refStr",
     "sortDescending": false,
     "showConfidenceIntervals": true,
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 37,
+    "versionNumber": 38,
     "lastModifiedBy": {
       "login": "nanae"
     },
-    "lastModifiedOn": 1639633539874
+    "lastModifiedOn": 1640220126331
   },
   "creationTag": {
     "versionNumber": 0,
